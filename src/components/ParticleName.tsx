@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Particle = {
   baseX: number;
@@ -33,6 +33,7 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const particlesRef = useRef<Particle[]>([]);
+  const [isCanvasReady, setIsCanvasReady] = useState(false);
   const pointerRef = useRef<PointerState>({
     x: -9999,
     y: -9999,
@@ -246,14 +247,18 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       pointer.vy = 0;
     };
 
-    const resizeObserver = new ResizeObserver(() => {
+    const handleResize = () => {
       buildParticles();
       if (prefersReducedMotion) drawStatic();
-    });
+    };
+
+    const resizeObserver =
+      "ResizeObserver" in window ? new ResizeObserver(handleResize) : null;
 
     const start = () => {
       if (!mounted) return;
       buildParticles();
+      setIsCanvasReady(true);
 
       if (prefersReducedMotion) {
         drawStatic();
@@ -282,12 +287,17 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       });
     }
 
-    resizeObserver.observe(wrap);
+    if (resizeObserver) {
+      resizeObserver.observe(wrap);
+    } else {
+      window.addEventListener("resize", handleResize);
+    }
 
     return () => {
       mounted = false;
       window.cancelAnimationFrame(animationId);
-      resizeObserver.disconnect();
+      resizeObserver?.disconnect();
+      window.removeEventListener("resize", handleResize);
       canvas.removeEventListener("pointermove", handlePointerMove);
       canvas.removeEventListener("pointerleave", handlePointerLeave);
     };
@@ -295,10 +305,24 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
 
   return (
     <div ref={wrapRef} className="relative min-h-[190px] w-full md:min-h-[245px]">
-      <h1 className="sr-only">Ruiyuan Bai 白蕊源 / Roi</h1>
+      <h1
+        className={`pointer-events-none absolute left-0 top-1/2 z-0 w-full -translate-y-1/2 font-display text-[clamp(3.9rem,15vw,7.4rem)] font-bold leading-[0.88] tracking-normal transition-opacity duration-500 ${
+          tone === "light" ? "text-[#052659]" : "text-white"
+        } ${isCanvasReady ? "opacity-0" : "opacity-100"}`}
+      >
+        Ruiyuan Bai
+        <span
+          className={`mt-4 block font-serif-sc text-[clamp(2rem,6.2vw,3.2rem)] font-semibold ${
+            tone === "light" ? "text-[#5483B3]" : "text-[#C1E8FF]"
+          }`}
+        >
+          白蕊源 / Roi
+        </span>
+      </h1>
+      <span className="sr-only">Ruiyuan Bai 白蕊源 / Roi</span>
       <canvas
         ref={canvasRef}
-        className="block max-w-full cursor-crosshair"
+        className="relative z-10 block max-w-full cursor-crosshair"
         aria-hidden="true"
       />
     </div>
