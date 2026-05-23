@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import PlogTimeline from "../components/PlogTimeline";
 import ProjectGrid from "../components/ProjectGrid";
-import ProjectMarquee from "../components/ProjectMarquee";
 import SectionHeader from "../components/SectionHeader";
 import { plogItems } from "../data/plog";
 import { getProjectsByType, projectsByNewest } from "../data/projects";
@@ -29,7 +28,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ProjectMarquee />
 
       <section className="section">
         <SectionHeader
