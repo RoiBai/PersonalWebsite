@@ -1,0 +1,14 @@
+node_modules
+dist
+.env
+.env.local
+.env.*.local
+_external
+external
+.npm-cache
+.tmp
+.tools
+incoming-assets
+incoming-images
+portfolio-vite.log
+public/videos/monster-between-us/momo-documentary.mp4
