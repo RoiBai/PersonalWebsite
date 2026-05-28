@@ -223,18 +223,15 @@ export default function VisitorCounter() {
           aria-hidden="true"
         />
         <div className="visitor-counter-content">
-          <p className="visitor-counter-eyebrow">
-            {counterStatus === "live" ? "live visitor note" : "visitor note"}
-          </p>
           <h2 className="visitor-counter-title">
-            你是第{" "}
+            <span>You are visitor No.</span>{" "}
             <span className="sr-only">{visitorNumber}</span>
             <span className="visitor-flip-board" aria-hidden="true">
               {visitorNumber.split("").map((digit, index) => (
                 <FlipDigit key={`${index}-${digit}`} digit={digit} index={index} />
               ))}
             </span>{" "}
-            位登录这个网站的人
+            <span>to enter this site.</span>
           </h2>
           {counterStatus === "offline" ? (
             <p className="visitor-counter-copy">
