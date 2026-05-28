@@ -236,11 +236,11 @@ export default function VisitorCounter() {
             </span>{" "}
             位登录这个网站的人
           </h2>
-          <p className="visitor-counter-copy">
-            {counterStatus === "offline"
-              ? "Counter will become live after Vercel KV / Redis is connected."
-              : "A tiny counter note for people who wandered into Roi's studio."}
-          </p>
+          {counterStatus === "offline" ? (
+            <p className="visitor-counter-copy">
+              Counter will become live after Vercel KV / Redis is connected.
+            </p>
+          ) : null}
         </div>
       </div>
     </section>
