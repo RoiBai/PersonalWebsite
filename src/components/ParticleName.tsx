@@ -101,14 +101,21 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       const sampleContext = sample.getContext("2d", {
         willReadFrequently: true,
       });
-      if (!sampleContext) return;
+      if (!sampleContext) return 0;
 
       sampleContext.clearRect(0, 0, width, height);
       drawName(sampleContext);
 
-      const image = sampleContext.getImageData(0, 0, width, height).data;
+      let image: Uint8ClampedArray;
+      try {
+        image = sampleContext.getImageData(0, 0, width, height).data;
+      } catch {
+        particlesRef.current = [];
+        return 0;
+      }
+
       const particles: Particle[] = [];
-      const gap = width < 560 ? 3 : 2;
+      const gap = width < 560 ? 3 : 2.4;
 
       for (let y = 0; y < height; y += gap) {
         for (let x = 0; x < width; x += gap) {
@@ -131,6 +138,7 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       }
 
       particlesRef.current = particles;
+      return particles.length;
     };
 
     const drawStatic = () => {
@@ -189,28 +197,31 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
         const dy = particle.baseY - pointer.y;
         const distance = Math.hypot(dx, dy);
 
-        if (pointer.active && distance < 118) {
-          const closeness = 1 - distance / 118;
-          const force = closeness * closeness * 4.2;
+        if (pointer.active && distance < 168) {
+          const closeness = 1 - distance / 168;
+          const force = closeness * closeness * 7.2;
           const angle = Math.atan2(dy, dx);
           particle.vx +=
-            Math.cos(angle) * force + pointer.vx * closeness * 0.045;
+            Math.cos(angle) * force + pointer.vx * closeness * 0.062;
           particle.vy +=
-            Math.sin(angle) * force + pointer.vy * closeness * 0.045;
+            Math.sin(angle) * force + pointer.vy * closeness * 0.062;
         }
 
-        const returnForce = pointer.active ? 0.06 : 0.16;
-        particle.vx += (particle.baseX - particle.x) * returnForce;
-        particle.vy += (particle.baseY - particle.y) * returnForce;
-        particle.vx *= pointer.active ? 0.82 : 0.7;
-        particle.vy *= pointer.active ? 0.82 : 0.7;
+        const returnForce = pointer.active ? 0.052 : 0.14;
+        const idleDrift = pointer.active ? 0 : Math.sin(frame + particle.phase) * 0.2;
+        particle.vx += (particle.baseX + idleDrift - particle.x) * returnForce;
+        particle.vy +=
+          (particle.baseY + Math.cos(frame + particle.phase) * 0.16 - particle.y) *
+          returnForce;
+        particle.vx *= pointer.active ? 0.84 : 0.72;
+        particle.vy *= pointer.active ? 0.84 : 0.72;
         particle.x += particle.vx;
         particle.y += particle.vy;
 
         context.fillStyle = particle.color;
         context.globalAlpha = pointer.active
           ? 0.82 + Math.sin(frame + particle.phase) * 0.12
-          : 0.96;
+          : 0.86 + Math.sin(frame * 1.8 + particle.phase) * 0.14;
         context.beginPath();
         context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         context.fill();
@@ -222,10 +233,16 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       animationId = window.requestAnimationFrame(animate);
     };
 
-    const handlePointerMove = (event: PointerEvent) => {
+    const syncPointer = (clientX: number, clientY: number) => {
       const rect = canvas.getBoundingClientRect();
-      const x = event.clientX - rect.left;
-      const y = event.clientY - rect.top;
+      const x = clientX - rect.left;
+      const y = clientY - rect.top;
+
+      if (x < 0 || y < 0 || x > rect.width || y > rect.height) {
+        handlePointerLeave();
+        return;
+      }
+
       const pointer = pointerRef.current;
       const wasActive = pointer.active;
 
@@ -238,6 +255,14 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       pointer.active = true;
     };
 
+    const handlePointerMove = (event: PointerEvent) => {
+      syncPointer(event.clientX, event.clientY);
+    };
+
+    const handleMouseMove = (event: MouseEvent) => {
+      syncPointer(event.clientX, event.clientY);
+    };
+
     const handlePointerLeave = () => {
       const pointer = pointerRef.current;
       pointer.active = false;
@@ -248,7 +273,8 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
     };
 
     const handleResize = () => {
-      buildParticles();
+      const count = buildParticles();
+      setIsCanvasReady(count >= 40);
       if (prefersReducedMotion) drawStatic();
     };
 
@@ -257,8 +283,8 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
 
     const start = () => {
       if (!mounted) return;
-      buildParticles();
-      setIsCanvasReady(true);
+      const count = buildParticles();
+      setIsCanvasReady(count >= 40);
 
       if (prefersReducedMotion) {
         drawStatic();
@@ -266,8 +292,9 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       }
 
       if (!listenersAttached) {
-        canvas.addEventListener("pointermove", handlePointerMove);
-        canvas.addEventListener("pointerleave", handlePointerLeave);
+        window.addEventListener("pointermove", handlePointerMove);
+        window.addEventListener("mousemove", handleMouseMove);
+        window.addEventListener("blur", handlePointerLeave);
         listenersAttached = true;
       }
 
@@ -282,7 +309,8 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
     if (document.fonts) {
       void document.fonts.ready.then(() => {
         if (!mounted) return;
-        buildParticles();
+        const count = buildParticles();
+        setIsCanvasReady(count >= 40);
         if (prefersReducedMotion) drawStatic();
       });
     }
@@ -298,8 +326,9 @@ export default function ParticleName({ tone = "dark" }: ParticleNameProps) {
       window.cancelAnimationFrame(animationId);
       resizeObserver?.disconnect();
       window.removeEventListener("resize", handleResize);
-      canvas.removeEventListener("pointermove", handlePointerMove);
-      canvas.removeEventListener("pointerleave", handlePointerLeave);
+      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("blur", handlePointerLeave);
     };
   }, [tone]);
 
