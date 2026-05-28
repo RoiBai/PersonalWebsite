@@ -30,6 +30,8 @@ export default function Home() {
     <>
       <Hero />
 
+      <VisitorCounter />
+
       <section className="section">
         <SectionHeader
           eyebrow="Selected Objects"
@@ -140,8 +142,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      <VisitorCounter />
     </>
   );
 }
