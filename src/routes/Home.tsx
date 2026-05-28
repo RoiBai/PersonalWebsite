@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import PlogTimeline from "../components/PlogTimeline";
 import ProjectGrid from "../components/ProjectGrid";
 import SectionHeader from "../components/SectionHeader";
+import VisitorCounter from "../components/VisitorCounter";
 import { plogItems } from "../data/plog";
 import { getProjectsByType, projectsByNewest } from "../data/projects";
 
@@ -139,6 +140,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <VisitorCounter />
     </>
   );
 }

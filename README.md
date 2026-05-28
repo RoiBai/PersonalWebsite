@@ -70,6 +70,19 @@ This is a Vite React single-page app and is ready for Vercel or Netlify.
 
 For Vercel, `vercel.json` rewrites all routes to `index.html` so refresh works on routes such as `/zoi`, `/tangible/with-me`, `/art/wall`, and `/games/loofa-man`.
 
+### Live Visitor Counter
+
+The homepage footer counter calls `POST /api/visitor` every time the home page opens. The API increments a shared Redis counter and returns a seven-digit number for the flip-board display.
+
+To make it live on Vercel:
+
+1. In the Vercel project dashboard, add a Vercel KV / Redis store.
+2. Connect it to this project so Vercel adds `KV_REST_API_URL` and `KV_REST_API_TOKEN`.
+3. Optional: set `VISITOR_COUNTER_START=12` to choose the first displayed number.
+4. Redeploy the project.
+
+Without KV / Redis, the section still renders visually, but the number cannot persist globally.
+
 For Netlify, add this redirect if needed:
 
 ```txt
