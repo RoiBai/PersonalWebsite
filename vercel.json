@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/art/tarot-site/demo",
+      "destination": "https://tarot-coral-gamma.vercel.app/"
+    },
+    {
+      "source": "/art/tarot-site/demo/:path*",
+      "destination": "https://tarot-coral-gamma.vercel.app/:path*"
+    },
+    {
       "source": "/api/(.*)",
       "destination": "/api/$1"
     },

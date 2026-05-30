@@ -714,7 +714,7 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "GitHub", url: "https://github.com/RoiBai/tarot" },
-      { label: "Try Demo", url: "https://roibai.github.io/tarot/" },
+      { label: "Try Demo", url: "/art/tarot-site/demo/" },
       { label: "Open ongoing study page", url: "/tarot" },
     ],
     image: "/images/tarot-cover.png",
@@ -889,7 +889,7 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "GitHub", url: "https://github.com/RoiBai/tarot" },
-      { label: "Try Demo", url: "https://roibai.github.io/tarot/" },
+      { label: "Try Demo", url: "/art/tarot-site/demo/" },
     ],
     // TODO: if the tarot app is later merged directly, replace this route shell with the full React flow.
     image: "/images/tarot-cover.png",
