@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -15,23 +14,7 @@ import Research from "./routes/Research";
 import ScrollProgress from "./components/ScrollProgress";
 import Tangible from "./routes/Tangible";
 
-const TAROT_DEMO_ORIGIN = "https://tarot-coral-gamma.vercel.app";
 const TAROT_SITE_DEMO_PATH = "/art/tarot-site/demo";
-
-function TarotDemoRedirect() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const subPath = location.pathname.replace(/^\/art\/tarot-site\/demo\/?/, "");
-    const destinationPath = subPath ? `/${subPath}` : "/";
-
-    window.location.replace(
-      `${TAROT_DEMO_ORIGIN}${destinationPath}${location.search}${location.hash}`,
-    );
-  }, [location.hash, location.pathname, location.search]);
-
-  return null;
-}
 
 export default function App() {
   const location = useLocation();
@@ -61,8 +44,8 @@ export default function App() {
             <Route path="/ongoing" element={<Ongoing />} />
             <Route path="/developer" element={<Navigate to="/ongoing" replace />} />
             <Route path="/rewind" element={<ProjectDetail projectIdOverride="rewind-past-self" />} />
-            <Route path={TAROT_SITE_DEMO_PATH} element={<TarotDemoRedirect />} />
-            <Route path={`${TAROT_SITE_DEMO_PATH}/*`} element={<TarotDemoRedirect />} />
+            <Route path={TAROT_SITE_DEMO_PATH} element={null} />
+            <Route path={`${TAROT_SITE_DEMO_PATH}/*`} element={null} />
             <Route path="/tarot" element={<ProjectDetail projectIdOverride="tarot-reflection" />} />
             <Route path="/zoi" element={<ProjectDetail projectIdOverride="zoi" />} />
             <Route path="/plog" element={<Plog />} />
