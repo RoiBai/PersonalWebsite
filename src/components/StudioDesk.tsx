@@ -15,6 +15,10 @@ type DeskObject = {
   };
 };
 
+type StudioDeskProps = {
+  compact?: boolean;
+};
+
 const objects: DeskObject[] = [
   {
     title: "Plog",
@@ -72,18 +76,32 @@ const objects: DeskObject[] = [
   },
 ];
 
-export default function StudioDesk() {
+export default function StudioDesk({ compact = false }: StudioDeskProps) {
   return (
     <div
-      className="relative mx-auto min-h-[34rem] w-full max-w-[34rem] lg:min-h-[36rem]"
+      className={
+        compact
+          ? "studio-desk-rail relative w-full"
+          : "relative mx-auto min-h-[34rem] w-full max-w-[34rem] lg:min-h-[36rem]"
+      }
       aria-label="Roi's desk of selected projects"
     >
-      <div className="pointer-events-none absolute -top-4 left-4 z-10 hidden rounded-full border border-[#052659]/18 bg-[#F6FBFF]/90 px-3 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-[#052659] shadow-sm lg:block">
-        Roi's desk
-      </div>
-      <div className="pointer-events-none absolute inset-8 hidden rounded-[2rem] border border-[#052659]/10 bg-[linear-gradient(135deg,rgba(193,232,255,0.18),rgba(246,251,255,0.04))] lg:block" />
+      {!compact ? (
+        <div className="pointer-events-none absolute -top-4 left-4 z-10 hidden rounded-full border border-[#052659]/18 bg-[#F6FBFF]/90 px-3 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-[#052659] shadow-sm lg:block">
+          Roi's desk
+        </div>
+      ) : null}
+      {!compact ? (
+        <div className="pointer-events-none absolute inset-8 hidden rounded-[2rem] border border-[#052659]/10 bg-[linear-gradient(135deg,rgba(193,232,255,0.18),rgba(246,251,255,0.04))] lg:block" />
+      ) : null}
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:block">
+      <div
+        className={
+          compact
+            ? "grid gap-3 sm:grid-cols-2 lg:grid-cols-6"
+            : "grid gap-3 sm:grid-cols-2 lg:block"
+        }
+      >
         {objects.map((object) => {
           const Icon = object.icon;
 
@@ -91,7 +109,11 @@ export default function StudioDesk() {
             <Link
               key={object.title}
               to={object.to}
-              className={`studio-object group lg:absolute ${object.className}`}
+              className={
+                compact
+                  ? "studio-object group"
+                  : `studio-object group lg:absolute ${object.className}`
+              }
               style={object.style}
             >
               <span

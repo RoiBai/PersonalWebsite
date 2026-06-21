@@ -1,13 +1,14 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import GooeyText from "./GooeyText";
 import ParticleName from "./ParticleName";
 import StudioDesk from "./StudioDesk";
 
 export default function Hero() {
   return (
     <section className="studio-hero relative isolate overflow-hidden bg-[#F6FBFF] text-[#021024]">
-      <div className="relative z-10 mx-auto grid min-h-[calc(92vh-4rem)] max-w-7xl items-center gap-8 px-5 py-10 md:px-8 md:py-14 lg:grid-cols-[minmax(0,0.95fr)_minmax(24rem,0.72fr)]">
+      <div className="relative z-10 mx-auto grid min-h-[calc(86vh-4rem)] max-w-7xl items-center gap-7 px-5 py-8 md:px-8 md:py-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(24rem,0.72fr)]">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,14 +17,14 @@ export default function Hero() {
         >
           <div className="mb-5 flex flex-wrap items-center gap-3">
             <span className="rounded-full border border-[#052659]/24 bg-white/70 px-4 py-2 text-sm font-medium text-[#052659] shadow-sm backdrop-blur">
-              Researcher · developer · gamer · dog walker
+              Researcher / developer / gamer / dog walker
             </span>
             <span className="rounded-full border border-[#7DA0CA]/36 bg-[#C1E8FF]/34 px-3 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#052659] backdrop-blur">
               ruiyuanbai.com
             </span>
           </div>
 
-          <div className="relative max-w-4xl overflow-visible">
+          <div className="relative max-w-5xl overflow-visible">
             <img
               src="/images/home/roi-and-dog-cutout.png"
               alt=""
@@ -42,16 +43,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2 text-sm text-[#052659]">
-            {["communication", "color + culture", "companion systems", "physical interaction"].map(
-              (item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-[#052659]/14 bg-white/58 px-3 py-1.5"
-                >
-                  {item}
-                </span>
-              )
-            )}
+            {[
+              "communication",
+              "color + culture",
+              "companion systems",
+              "physical interaction",
+            ].map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-[#052659]/14 bg-white/58 px-3 py-1.5"
+              >
+                {item}
+              </span>
+            ))}
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -81,8 +85,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, rotate: 1 }}
           animate={{ opacity: 1, y: 0, rotate: 0 }}
           transition={{ duration: 0.62, delay: 0.08 }}
-          className="lg:-mt-8"
+          className="hero-desk-column"
         >
+          <GooeyText
+            texts={["research", "games", "tangible", "systems"]}
+            className="hero-desk-gooey"
+            textClassName="hero-desk-gooey-text"
+          />
           <StudioDesk />
         </motion.div>
       </div>

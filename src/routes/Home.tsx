@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Entropy from "../components/Entropy";
 import Hero from "../components/Hero";
 import PlogTimeline from "../components/PlogTimeline";
 import ProjectGrid from "../components/ProjectGrid";
@@ -32,12 +33,17 @@ export default function Home() {
 
       <VisitorCounter />
 
-      <section className="section">
-        <SectionHeader
-          eyebrow="Selected Objects"
-          title="Pieces to open, test, read, and play."
-          description="Across screen-based systems, spatial computing, games, and tangible interaction, I build experiences that are playful, reflective, and human-centered."
-        />
+      <section className="section selected-work-section">
+        <div className="selected-work-heading">
+          <SectionHeader
+            eyebrow="Selected Objects"
+            title="Pieces to open, test, read, and play."
+            description="Across screen-based systems, spatial computing, games, and tangible interaction, I build experiences that are playful, reflective, and human-centered."
+          />
+          <div className="selected-work-animation" aria-hidden="true">
+            <Entropy size={380} leftLabel="form" rightLabel="drift" />
+          </div>
+        </div>
         <ProjectGrid projects={selected} />
       </section>
 
@@ -57,7 +63,7 @@ export default function Home() {
                   className="rounded-lg border border-ink/10 bg-paper/80 p-5 shadow-sm"
                 >
                   <p className="text-sm font-medium text-graphite">
-                    {project.year} · {project.venue}
+                    {project.year} / {project.venue}
                   </p>
                   <h3 className="mt-2 text-xl font-semibold text-ink">
                     {project.title}
@@ -87,10 +93,22 @@ export default function Home() {
       <section className="section">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {[
-            ["Creative Coding", "/art", "Camera collage, browser motion, perception, and digital space."],
+            [
+              "Creative Coding",
+              "/art",
+              "Camera collage, browser motion, perception, and digital space.",
+            ],
             ["Games", "/games", "Newsgames and experimental Unity browser games."],
-            ["Tangible", "/tangible", "Physical prototypes, embodied interaction, and installation-based reflection."],
-            ["Ongoing Tests", "/ongoing", "Tarot reflection and prototypes open to testing and refinement."],
+            [
+              "Tangible",
+              "/tangible",
+              "Physical prototypes, embodied interaction, and installation-based reflection.",
+            ],
+            [
+              "Ongoing Tests",
+              "/ongoing",
+              "Tarot reflection and prototypes open to testing and refinement.",
+            ],
           ].map(([title, to, description], index) => (
             <Link
               key={to}

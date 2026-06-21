@@ -495,6 +495,153 @@ a {
   }
 }
 
+.gooey-text {
+  position: relative;
+  width: min(100%, 48rem);
+  height: clamp(3.6rem, 7vw, 6.6rem);
+}
+
+.gooey-text-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gooey-text-layer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-family: Fraunces, "Noto Serif SC", Georgia, "Songti SC", SimSun, serif;
+  font-size: clamp(2.6rem, 7vw, 6.2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hero-desk-column {
+  display: grid;
+  align-content: center;
+  min-height: clamp(36rem, 46vw, 41rem);
+  padding-top: clamp(0.2rem, 0.8vw, 0.7rem);
+}
+
+.hero-desk-gooey {
+  width: min(100%, 36rem);
+  height: clamp(4.2rem, 6.4vw, 6.4rem);
+  margin: 0 0 clamp(-0.35rem, -0.5vw, -0.15rem) auto;
+  overflow: visible;
+}
+
+.hero-desk-gooey .gooey-text-inner {
+  overflow: visible;
+}
+
+.hero-desk-gooey-text {
+  background: linear-gradient(96deg, #e85f3d 0%, #f6c64f 42%, #5483b3 72%, #2f7f7b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(3.1rem, 6.8vw, 6.1rem);
+  line-height: 1.08;
+  padding-bottom: 0.35rem;
+}
+
+.selected-work-section {
+  position: relative;
+}
+
+.selected-work-heading {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  margin-bottom: clamp(2rem, 4vw, 3.2rem);
+}
+
+.selected-work-animation {
+  position: relative;
+  display: none;
+  min-height: clamp(16rem, 24vw, 23rem);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.selected-work-animation .entropy-panel {
+  position: relative;
+  inset: auto;
+  margin-inline: auto;
+  transform: none;
+}
+
+.game-pong-title {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: clamp(12.5rem, 17vw, 16rem);
+  min-height: 12.5rem;
+}
+
+.games-page-section {
+  max-width: 90rem;
+  padding-top: clamp(4.5rem, 7vw, 6.5rem);
+}
+
+.games-title-section {
+  display: grid;
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: center;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.games-title-copy {
+  max-width: 43rem;
+}
+
+.games-title-kicker {
+  color: #052659;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.games-title-copy h1 {
+  margin-top: 0.7rem;
+  color: #021024;
+  font-size: clamp(2.25rem, 4.6vw, 4.35rem);
+  font-weight: 700;
+  line-height: 0.98;
+}
+
+.games-title-copy p:last-child {
+  margin-top: 1.15rem;
+  max-width: 41rem;
+  color: #052659;
+  font-size: clamp(1rem, 1.55vw, 1.18rem);
+  line-height: 1.62;
+}
+
+@media (min-width: 768px) {
+  .selected-work-heading {
+    grid-template-columns: minmax(0, 0.78fr) minmax(18rem, 0.8fr);
+  }
+
+  .selected-work-animation {
+    display: grid;
+    place-items: center;
+  }
+
+  .games-title-section {
+    grid-template-columns: minmax(0, 0.78fr) minmax(30rem, 1.08fr);
+  }
+}
+
 @media (max-width: 720px) {
   .visitor-counter-title {
     justify-content: flex-start;
@@ -502,6 +649,27 @@ a {
 
   .visitor-flip-board {
     margin: 0;
+  }
+
+  .hero-desk-column {
+    min-height: auto;
+    padding-top: 0;
+  }
+
+  .hero-desk-gooey {
+    height: 4.8rem;
+    margin: 0 0 0.25rem;
+    width: min(100%, 24rem);
+  }
+
+  .hero-desk-gooey-text {
+    font-size: clamp(2.9rem, 14vw, 4.4rem);
+    white-space: nowrap;
+  }
+
+  .game-pong-title {
+    height: 10.5rem;
+    min-height: 10.5rem;
   }
 }
 
