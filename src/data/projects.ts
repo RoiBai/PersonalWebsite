@@ -928,6 +928,7 @@ export const projects: Project[] = [
       "Ongoing Research",
     ],
     links: [
+      { label: "Try Demo", url: "/rewind/demo/" },
       {
         label: "View poster PDF",
         url: "/files/rewind/BAI_Ruiyuan_Final_Poster.pdf",

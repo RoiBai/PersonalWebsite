@@ -17,6 +17,18 @@
       "destination": "/api/$1"
     },
     {
+      "source": "/rewind/demo",
+      "destination": "https://rewind-qk20gm1fm-roibais-projects.vercel.app/"
+    },
+    {
+      "source": "/rewind/demo/",
+      "destination": "https://rewind-qk20gm1fm-roibais-projects.vercel.app/"
+    },
+    {
+      "source": "/rewind/demo/:path*",
+      "destination": "https://rewind-qk20gm1fm-roibais-projects.vercel.app/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
