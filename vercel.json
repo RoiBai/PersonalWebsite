@@ -18,15 +18,15 @@
     },
     {
       "source": "/rewind/demo",
-      "destination": "https://rewind-qk20gm1fm-roibais-projects.vercel.app/"
+      "destination": "https://rewind-gray.vercel.app/"
     },
     {
       "source": "/rewind/demo/",
-      "destination": "https://rewind-qk20gm1fm-roibais-projects.vercel.app/"
+      "destination": "https://rewind-gray.vercel.app/"
     },
     {
       "source": "/rewind/demo/:path*",
-      "destination": "https://rewind-qk20gm1fm-roibais-projects.vercel.app/:path*"
+      "destination": "https://rewind-gray.vercel.app/:path*"
     },
     {
       "source": "/(.*)",
