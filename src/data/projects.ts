@@ -18,6 +18,7 @@ export type ProjectGalleryItem = {
   src: string;
   alt: string;
   caption?: string;
+  fit?: "cover" | "contain";
 };
 
 export type ProjectVideo = {
@@ -49,12 +50,14 @@ export type Project = {
   }[];
   image?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
   route?: string;
   featured?: boolean;
   whatIDid?: string[];
   whyItMatters?: string;
   sections?: ProjectSection[];
   gallery?: ProjectGalleryItem[];
+  galleryTitle?: string;
   video?: ProjectVideo;
 };
 
@@ -73,7 +76,7 @@ export const projects: Project[] = [
     shortDescription:
       "A bilingual, source-verified digital archive documenting animals whose deaths were caused by human actions.",
     abstract:
-      "Earth Is Not Humanity’s Alone is an ongoing digital archive that makes individual animal lives visible through documented evidence rather than graphic imagery. The current edition presents 191 verified fatal events involving 133 animal types across a timeline spanning 1826 to 2026.\n\nVisitors move horizontally through time, encountering animals affected by experimentation, captivity, entertainment, war, pollution, poaching, habitat destruction, commercial exploitation, and other forms of human-caused harm. Each entry connects an individual life to its date, location, circumstances, outcome, and supporting sources.\n\nThe project is not intended to create a spectacle of suffering. Instead, it asks visitors to recognize animals as individual inhabitants of a shared planet—and to consider why so many lives become visible only after harm has already occurred.",
+      "Earth Is Not Humanity’s Alone is a bilingual digital archive documenting individual animals whose deaths were caused by human actions. The current edition presents 191 verified fatal events involving 133 animal types from 1826 to 2026.\n\nVisitors move horizontally through time and open source-backed records about each animal’s life, location, circumstances, and outcome. Non-graphic portraits keep the experience reflective, asking visitors to see animals as fellow inhabitants rather than statistics.",
     tags: [
       "Animal Advocacy",
       "Digital Archive",
@@ -88,20 +91,17 @@ export const projects: Project[] = [
         url: "/art/Earth-is-not-humanitys-alone/demo",
       },
     ],
-    image: "/art/Earth-is-not-humanitys-alone/demo/og.png",
+    image: "/images/earth-archive/01-home.png",
     imageAlt:
-      "Earth Is Not Humanity’s Alone animal harm archive social preview",
-    route: "/art/earth-is-not-humanitys-alone",
+      "Opening screen of the Earth Is Not Humanity’s Alone bilingual animal archive",
+    imageFit: "contain",
+    route: "/art/Earth-is-not-humanitys-alone",
     featured: false,
     whatIDid: [
-      "Researched and reviewed 286 animal-related records, publishing 191 events that met the project’s fatal-causation standard.",
-      "Developed an evidence framework requiring a documented death caused by human action.",
-      "Cross-checked every published event with at least two reliable sources, prioritizing court records, government documents, institutional statements, and original research.",
-      "Designed and developed a bilingual horizontal timeline with responsive scrolling, mobile swipe navigation, event previews, detailed records, and source lists.",
-      "Preserved conflicting information and uncertain details instead of forcing every case into a simplified narrative.",
-      "Created a consistent non-graphic portrait system that gives each animal a visible identity without reproducing wounds, bodies, or abuse footage.",
-      "Designed an interactive memorial of ten candles to communicate the scale of the archive and the records that remain undocumented.",
-      "Built the website as an accessible, responsive experience using React, Next.js, TypeScript, and motion-based interactions.",
+      "Reviewed 286 animal-related records and published 191 cases that met the fatal-causation standard.",
+      "Verified every public case with at least two reliable sources while preserving conflicts and uncertainty.",
+      "Designed and developed a bilingual, responsive horizontal timeline with previews, detailed records, and source lists.",
+      "Created a non-graphic portrait system and ten-candle memorial to communicate individual identity and archival scale.",
     ],
     whyItMatters:
       "The archive asks visitors to recognize animals as individual inhabitants of a shared planet and treats evidence, uncertainty, and documentation as essential parts of responsible advocacy.",
@@ -120,6 +120,51 @@ export const projects: Project[] = [
         title: "Call to Action",
         body:
           "The archive ends with ten memorial candles. One illuminated candle represents the 191 verified events currently published—roughly one tenth of a working estimate of approximately 2,000 historical records that may meet the same evidence standard. The nine unlit candles represent lives and records that remain outside the timeline.\n\nThis project calls for enforceable animal-protection laws that prohibit deliberate cruelty and killing, establish basic safeguards for companion, working, wild, and captive animals, and require meaningful investigation, enforcement, penalties, and public accountability.\n\nLighting a candle is only a symbolic gesture. Real protection requires legislation, enforcement, documentation, and the recognition that Earth does not belong to humanity alone.",
+      },
+    ],
+    galleryTitle: "Archive interface and interactions",
+    gallery: [
+      {
+        src: "/images/earth-archive/01-home.png",
+        alt: "Opening screen showing the archive title, bilingual introduction, record count, animal types, and time span",
+        caption: "Opening view: archive scope, bilingual introduction, and navigation instructions.",
+        fit: "contain",
+      },
+      {
+        src: "/images/earth-archive/02-timeline.png",
+        alt: "Horizontal animal archive timeline showing illustrated records from 1826 to 1932",
+        caption: "The horizontal timeline introduces individual animals across historical events.",
+        fit: "contain",
+      },
+      {
+        src: "/images/earth-archive/03-event-preview.png",
+        alt: "Timeline with an archival preview card open for the last confirmed great auk pair",
+        caption: "Event previews reveal key facts without interrupting the timeline.",
+        fit: "contain",
+      },
+      {
+        src: "/images/earth-archive/04-record-detail.png",
+        alt: "Detailed archive record for the last confirmed great auk pair with illustration, evidence status, and full record",
+        caption: "Detailed records bring together context, verification status, and source-backed documentation.",
+        fit: "contain",
+      },
+      {
+        src: "/images/earth-archive/05-timeline-2015.png",
+        alt: "Horizontal archive timeline showing animal records from 2014 and 2015",
+        caption: "A later section of the archive shows the density of documented events in 2015.",
+        fit: "contain",
+      },
+      {
+        src: "/images/earth-archive/06-timeline-2026.png",
+        alt: "End of the public archive timeline showing animal records from 2025 and 2026",
+        caption: "The current public timeline continues through 2026 while the wider record remains unfinished.",
+        fit: "contain",
+      },
+      {
+        src: "/images/earth-archive/07-memorial.png",
+        alt: "Closing memorial view with ten candles and text explaining the scale of documented and undocumented animal records",
+        caption: "The ten-candle memorial connects 191 published events to the larger undocumented archive.",
+        fit: "contain",
       },
     ],
   },
@@ -1138,7 +1183,7 @@ export const getProjectsByType = (type: ProjectType) =>
   projectsByNewest.filter((project) => project.type === type);
 
 export const getProjectById = (id: string) =>
-  projects.find((project) => project.id === id);
+  projects.find((project) => project.id.toLowerCase() === id.toLowerCase());
 
 export const getProjectByRoute = (route: string) =>
   projects.find((project) => project.route === route);

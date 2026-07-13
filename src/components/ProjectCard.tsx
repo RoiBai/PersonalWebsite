@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           src={project.image}
           alt={project.imageAlt}
           title={project.displayTitle ?? project.title}
-          className="transition duration-500 group-hover:scale-[1.035]"
+          className={`${project.imageFit === "contain" ? "!object-contain bg-[#f3eee6]" : ""} transition duration-500 group-hover:scale-[1.035]`}
         />
       </div>
       <div className="flex min-h-72 flex-col p-5">

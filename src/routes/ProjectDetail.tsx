@@ -110,7 +110,7 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
               src={project.image}
               alt={project.imageAlt}
               title={project.displayTitle ?? project.title}
-              className="aspect-[4/3]"
+              className={`aspect-[4/3] ${project.imageFit === "contain" ? "!object-contain bg-[#f3eee6]" : ""}`}
             />
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
               Gallery
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-ink">
-              Process images and report excerpts
+              {project.galleryTitle ?? "Process images and report excerpts"}
             </h2>
           </div>
           <ProcessGallery

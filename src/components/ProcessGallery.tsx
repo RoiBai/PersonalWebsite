@@ -21,7 +21,7 @@ function GalleryCard({ item, title }: GalleryCardProps) {
             src={item.src}
             alt={item.alt}
             title={item.caption ?? title}
-            className="h-full w-full"
+            className={`h-full w-full ${item.fit === "contain" ? "!object-contain bg-[#f3eee6]" : ""}`}
           />
         </div>
         {item.caption ? (
