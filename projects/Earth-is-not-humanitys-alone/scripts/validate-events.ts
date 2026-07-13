@@ -4,8 +4,10 @@ import { events, reviewedEvents } from "../data/events";
 import { animalEventsSchema } from "../schemas/eventSchema";
 import { fatalityAuditExclusions } from "../lib/fatalityAudit";
 import { timelineVisualDiversityExclusions } from "../lib/timelineVisualDiversity";
+import { eventText } from "../lib/i18n";
 
 const forbidden = /lorem ipsum|placeholder|\bTBD\b|待补充|虚构案例/i;
+const cjk = /[\u3400-\u9fff]/;
 const ids = new Set<string>(); const slugs = new Set<string>(); const errors: string[] = [];
 animalEventsSchema.parse(reviewedEvents);
 for (const [index, event] of reviewedEvents.entries()) {
@@ -20,6 +22,8 @@ for (const [index, event] of reviewedEvents.entries()) {
   if (event.illustration.generationStatus === "not-available") errors.push(`插画状态不可发布: ${event.id}`);
   if (forbidden.test(JSON.stringify(event))) errors.push(`发现占位文字: ${event.id}`);
   if (!(["verified", "partially-verified"] as string[]).includes(event.verification.status)) errors.push(`未验证事件进入前台: ${event.id}`);
+  const english = eventText(event, "en");
+  if (cjk.test(english.place) || cjk.test(english.country)) errors.push(`英文地点仍含中文: ${event.id} (${english.place}, ${english.country})`);
 }
 for (const event of events) if (fatalityAuditExclusions.has(event.id)) errors.push(`未通过致死因果审计的事件进入前台: ${event.id}`);
 for (const event of events) if (timelineVisualDiversityExclusions.has(event.id)) errors.push(`相邻同物种精简事件进入前台: ${event.id}`);

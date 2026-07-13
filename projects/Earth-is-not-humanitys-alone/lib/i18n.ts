@@ -49,6 +49,14 @@ const categoryMap: Record<string,string> = {
   "战争":"war", "动物实验":"animal experimentation", "航天":"spaceflight research", "圈养":"captivity", "长期圈养":"long-term captivity", "商业捕猎":"commercial hunting", "栖息地破坏":"habitat destruction", "物种灭绝":"extinction", "非法捕猎":"poaching", "非法贸易":"wildlife trafficking", "渔具缠绕":"fishing-gear entanglement", "污染":"pollution", "虐待":"cruelty", "娱乐":"entertainment", "马戏表演":"circus use", "工作动物":"working-animal deployment", "警犬管理失误":"police-dog management failure", "热暴露":"heat exposure", "管理性处死":"management killing", "人兽冲突":"human-wildlife conflict", "建筑撞击":"building collision", "灭鼠剂":"rodenticide exposure",
 };
 
+const countryMap: Record<string,string> = {
+  "美国":"United States", "比利时":"Belgium", "法国":"France", "澳大利亚":"Australia", "中国香港":"Hong Kong", "中国":"China", "苏联":"Soviet Union", "法属阿尔及利亚":"French Algeria", "菲律宾":"Philippines", "阿富汗":"Afghanistan", "厄瓜多尔":"Ecuador", "泰国／缅甸边境":"Thailand–Myanmar border", "罗马尼亚、匈牙利与塞尔维亚":"Romania, Hungary, and Serbia", "英国":"United Kingdom", "刚果民主共和国":"Democratic Republic of the Congo", "加拿大":"Canada", "丹麦":"Denmark", "肯尼亚":"Kenya", "津巴布韦":"Zimbabwe", "巴西":"Brazil", "巴勒斯坦加沙地带":"Gaza Strip, Palestine", "葡萄牙":"Portugal", "泰国":"Thailand", "伊拉克":"Iraq", "墨西哥":"Mexico", "印度尼西亚":"Indonesia", "博茨瓦纳":"Botswana", "乌干达":"Uganda", "巴基斯坦":"Pakistan", "美国、加拿大海域":"Waters of the United States and Canada", "法罗群岛":"Faroe Islands", "乌克兰":"Ukraine", "挪威":"Norway", "加拿大、美国":"Canada and the United States", "意大利":"Italy", "西班牙":"Spain", "阿根廷":"Argentina",
+};
+
+export function englishCountryName(countryZh: string): string {
+  return countryMap[countryZh] ?? countryZh;
+}
+
 export function englishFallback(event: AnimalEvent): NonNullable<AnimalEvent["en"]> {
   const animalName = event.animal.originalName || event.animal.speciesEn || event.animal.nameZh;
   const species = event.animal.speciesEn || event.animal.speciesZh;
@@ -58,7 +66,7 @@ export function englishFallback(event: AnimalEvent): NonNullable<AnimalEvent["en
   const summary = `This record concerns ${animalName}, ${species}, at ${place} on ${event.date}. The cited records document ${categories.slice(0,2).join(" and ")}.`;
   const infoBoardText = `${summary} The account is cross-checked against ${event.sources.length} sources, including records from ${sourceNames}.`;
   const fullStory = `${infoBoardText} This English edition presents the verified identity, date, place, harm classification and source register without reproducing graphic material. The source list preserves publication details and links to the underlying record. Where the available material conflicts, the event remains marked as partially verified rather than forcing a single dramatic claim. Switch to Chinese for the earlier, longer editorial synthesis while the case-specific English translation is expanded.`;
-  return { displayDate: new Intl.DateTimeFormat("en", { dateStyle:"long", timeZone:"UTC" }).format(new Date(`${event.date}T00:00:00Z`)), title: event.sources[0]?.title || event.shortTitleZh, shortTitle: event.sources[0]?.title || event.shortTitleZh, animalName, species, place, country:event.location.countryZh, summary, infoBoardText, fullStory, highlightedFact:`Verified with ${event.sources.length} public sources; uncertainty is retained when records differ.`, harmCategory:categories, outcome:"The documented outcome and follow-up are described in the cited records.", uncertaintyNote:event.verification.status === "partially-verified" ? "Some details remain disputed or have not been released in full." : undefined, contentWarning:"This record concerns harm to an animal. Graphic imagery is not shown.", alt:`Archive portrait of ${animalName}, ${species}.` };
+  return { displayDate: new Intl.DateTimeFormat("en", { dateStyle:"long", timeZone:"UTC" }).format(new Date(`${event.date}T00:00:00Z`)), title: event.sources[0]?.title || event.shortTitleZh, shortTitle: event.sources[0]?.title || event.shortTitleZh, animalName, species, place, country:englishCountryName(event.location.countryZh), summary, infoBoardText, fullStory, highlightedFact:`Verified with ${event.sources.length} public sources; uncertainty is retained when records differ.`, harmCategory:categories, outcome:"The documented outcome and follow-up are described in the cited records.", uncertaintyNote:event.verification.status === "partially-verified" ? "Some details remain disputed or have not been released in full." : undefined, contentWarning:"This record concerns harm to an animal. Graphic imagery is not shown.", alt:`Archive portrait of ${animalName}, ${species}.` };
 }
 
 export function eventText(event: AnimalEvent, locale: Locale) {
