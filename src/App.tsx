@@ -15,6 +15,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import Tangible from "./routes/Tangible";
 
 const TAROT_SITE_DEMO_PATH = "/art/tarot-site/demo";
+const EARTH_ARCHIVE_DEMO_PATH = "/art/Earth-is-not-humanitys-alone/demo";
 
 export default function App() {
   const location = useLocation();
@@ -46,6 +47,8 @@ export default function App() {
             <Route path="/rewind" element={<ProjectDetail projectIdOverride="rewind-past-self" />} />
             <Route path={TAROT_SITE_DEMO_PATH} element={null} />
             <Route path={`${TAROT_SITE_DEMO_PATH}/*`} element={null} />
+            <Route path={EARTH_ARCHIVE_DEMO_PATH} element={null} />
+            <Route path={`${EARTH_ARCHIVE_DEMO_PATH}/*`} element={null} />
             <Route path="/tarot" element={<ProjectDetail projectIdOverride="tarot-reflection" />} />
             <Route path="/zoi" element={<ProjectDetail projectIdOverride="zoi" />} />
             <Route path="/plog" element={<Plog />} />

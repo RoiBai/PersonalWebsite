@@ -1,0 +1,5 @@
+import type { EventSource } from "@/types/event";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { useLanguage } from "@/components/ui/LanguageProvider";
+const labels={zh:{official:"机构声明","court-record":"法院文件",government:"政府资料",research:"研究／档案",ngo:"非政府组织",journalism:"新闻报道"},en:{official:"Institutional statement","court-record":"Court record",government:"Government record",research:"Research / archive",ngo:"NGO record",journalism:"Journalism"}} as const;
+export function EventSourceList({ sources }: { sources: EventSource[] }) { const {locale}=useLanguage(); return <ol className="source-list">{sources.map((source) => <li key={source.id}><div><span>{labels[locale][source.sourceType]}{source.isPrimary ? (locale === "en" ? " · primary" : " · 一手") : ""}</span><time>{source.publishedAt ?? (locale === "en" ? "Date not stated" : "未注明发布日期")}</time></div><ExternalLink href={source.url}>{source.title}</ExternalLink><p>{source.publisher} · {locale === "en" ? "accessed" : "最后访问"} {source.accessedAt}</p></li>)}</ol>; }

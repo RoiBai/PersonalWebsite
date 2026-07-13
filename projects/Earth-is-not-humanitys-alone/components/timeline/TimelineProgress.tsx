@@ -1,0 +1,1 @@
+export function TimelineProgress({ index, total, year, progress }: { index: number; total: number; year: string; progress: number }) { return <div className="timeline-progress" aria-live="polite"><span>{String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}</span><b>{year}</b><div><i style={{ transform: `scaleX(${progress})` }} /></div></div>; }

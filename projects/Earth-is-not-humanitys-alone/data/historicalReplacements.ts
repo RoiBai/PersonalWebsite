@@ -1,0 +1,83 @@
+import type { AnimalEvent } from "@/types/event";
+
+const accessedAt = "2026-07-13";
+
+export const historicalReplacements: AnimalEvent[] = [
+  {
+    id: "balaclava-light-brigade-horses",
+    slug: "balaclava-light-brigade-horses",
+    date: "1854-10-25",
+    datePrecision: "exact",
+    displayDateZh: "1854年10月25日",
+    titleZh: "轻骑兵团战马被命令带入炮火",
+    shortTitleZh: "被命令冲锋的战马",
+    animal: {
+      nameZh: "巴拉克拉瓦轻骑兵团战马群",
+      originalName: "Horses of the Light Brigade",
+      speciesZh: "军用马",
+      speciesEn: "Military horses",
+      scientificName: "Equus ferus caballus",
+      identifyingFeatures: "英国轻骑兵团在巴拉克拉瓦冲锋中使用的军用马群",
+    },
+    location: { placeZh: "巴拉克拉瓦北谷", countryZh: "克里米亚", originalPlaceName: "North Valley, Balaklava, Crimea" },
+    summaryZh: "一道被误解的军事命令让英国轻骑兵团正面冲向俄军炮阵；国家陆军博物馆记录，这次行动损失了475匹战马。",
+    infoBoardTextZh: "命令原本要求阻止俄军带走火炮，却在传递与理解中改变了方向。673名骑兵与战马冲入三面火力；大量马匹当场死亡或因伤被处死。",
+    fullStoryZh: "1854年10月25日，克里米亚战争巴拉克拉瓦战役中，英国统帅拉格伦要求骑兵迅速前进，阻止俄军带走缴获的火炮。国家陆军博物馆保存的原始命令只有简短数行；它从高地传到谷地后，被指挥官理解为向北谷尽头的俄军炮阵正面进攻。轻骑兵团约673名骑兵带着军马进入两侧与正面的炮火。博物馆的战役记录称，行动造成约260名军人死亡或受伤，并损失475匹马。这里的“损失”包括在战斗中死亡、重伤后不得不被处死以及无法继续服役的马；同时代资料的细分数字并不完全一致，因此本项目不把475全部写成当场死亡。可以确认的是，大批马匹在一项由人类命令、传递错误与战争共同造成的行动中死亡。它们没有选择战场，也无法理解那份命令，却与骑兵一起承担了这次军事失误的后果。",
+    highlightedFactZh: "官方博物馆记录的是475匹战马损失；其中许多在炮火中死亡或因重伤被处死。",
+    harmCategory: ["战争", "军事役用", "错误命令"],
+    outcomeZh: "大量战马在冲锋中死亡或因伤被处死，轻骑兵团失去475匹马。",
+    aftermathZh: "这次冲锋成为研究军事命令失误的著名案例，但动物伤亡通常只以附属数字出现。",
+    uncertaintyNoteZh: "475是马匹“损失”总数，并不等于全部当场死亡；同期材料对死亡与伤后处死的细分不一。",
+    contentWarningZh: "本条目涉及战争中的人和动物死亡，不展示战场影像。",
+    illustration: { src: "/animals/balaclava-light-brigade-horses.png", altZh: "三匹佩戴十九世纪军用鞍具、并排站立的战马档案插画", width: 1024, height: 1024, promptFile: "image-prompts/balaclava-light-brigade-horses.txt", generationStatus: "generated" },
+    referenceImage: { url: "https://collection.nam.ac.uk/detail.php?acc=1962-11-4-3", pageUrl: "https://collection.nam.ac.uk/detail.php?acc=1962-11-4-3", publisher: "National Army Museum", license: "馆藏页面标注 Out of Copyright", usageStatus: "public-domain" },
+    sources: [
+      { id: "balaclava-nam-order", title: "The order that launched the Charge of the Light Brigade, 1854", publisher: "National Army Museum", url: "https://collection.nam.ac.uk/detail.php?acc=1962-11-4-3", sourceType: "official", publishedAt: "1854-10-25", accessedAt, language: "en", isPrimary: true },
+      { id: "balaclava-nam-history", title: "Battle of Balaklava", publisher: "National Army Museum", url: "https://www.nam.ac.uk/explore/battle-balaklava", sourceType: "research", accessedAt, language: "en", isPrimary: false },
+      { id: "balaclava-morley", title: "The Cause of the Charge of Balaclava", publisher: "Project Gutenberg edition of Thomas Morley's 1855 pamphlet", url: "https://www.gutenberg.org/files/45309/45309-h/45309-h.htm", sourceType: "research", publishedAt: "1855-01-01", accessedAt, language: "en", isPrimary: false },
+    ],
+    verification: { status: "partially-verified", verifiedAt: accessedAt, notes: "行动、命令与475匹马损失可核实；马匹死亡与重伤处死的细分数字不一致。" },
+    en: {
+      displayDate: "October 25, 1854", title: "The Light Brigade's horses were ordered into artillery fire", shortTitle: "Horses ordered into the charge", animalName: "Horses of the Light Brigade", species: "Military horses", place: "North Valley, Balaklava", country: "Crimea",
+      summary: "A misunderstood military order sent the British Light Brigade directly toward Russian guns; the National Army Museum records the loss of 475 horses.",
+      infoBoardText: "The order was meant to stop captured guns being removed, but its direction changed in transmission. The horses carried 673 cavalrymen into fire from the front and both sides.",
+      fullStory: "On October 25, 1854, during the Battle of Balaklava, Lord Raglan ordered cavalry to advance and prevent Russian forces removing captured guns. The short written order preserved by the National Army Museum was interpreted in the valley as an instruction to attack the Russian battery at its far end. About 673 cavalrymen and their horses entered artillery fire from three directions. The museum records about 260 men killed or wounded and 475 horses lost. “Lost” includes horses killed during the action, destroyed after severe wounds, or no longer available for service; surviving records do not support treating all 475 as immediate deaths. What is certain is that many horses died because of a human war, a misunderstood command and a charge they could neither choose nor understand. Their deaths usually remain a supporting statistic in a story told about commanders and soldiers.",
+      highlightedFact: "The official museum figure is 475 horses lost, not 475 confirmed immediate deaths.", harmCategory: ["war", "military use", "command failure"], outcome: "Many horses were killed or destroyed after wounds; the brigade lost 475 horses.", aftermath: "The charge became a defining example of military command failure, while the horses remained largely unnamed.", uncertaintyNote: "Contemporary records do not agree on how many of the 475 died during the charge versus after injury.", contentWarning: "This record concerns human and animal deaths in war. Battlefield imagery is not shown.", alt: "Three military horses wearing plain nineteenth-century cavalry tack, standing together."
+    },
+  },
+  {
+    id: "brown-dog-affair",
+    slug: "brown-dog-affair",
+    date: "1903-02-02",
+    datePrecision: "exact",
+    displayDateZh: "1903年2月2日",
+    titleZh: "一只棕狗死于公开生理实验",
+    shortTitleZh: "实验台上的无名棕狗",
+    animal: { nameZh: "棕狗事件中的无名犬", originalName: "The Brown Dog", speciesZh: "小型梗犬混种", speciesEn: "Small terrier-type mixed dog", scientificName: "Canis lupus familiaris", sex: "雄性", identifyingFeatures: "同期庭审描述为约6公斤、短而粗糙棕毛的小型梗犬混种" },
+    location: { placeZh: "伦敦大学学院生理学教室", countryZh: "英国", originalPlaceName: "University College London physiology lecture theatre" },
+    summaryZh: "一只没有留下姓名的棕色梗犬在伦敦大学学院接受生理实验后被杀死；关于麻醉与是否重复使用动物的争议进入庭审和议会。",
+    infoBoardTextZh: "可以确认的是，威廉·贝利斯在约60名学生面前对棕狗进行生理演示，动物随后被杀死。目击者与实验方对麻醉是否充分存在尖锐冲突。",
+    fullStoryZh: "1903年2月2日，一只没有留下姓名的棕色小型梗犬被带入伦敦大学学院的生理学教室。UCL馆藏说明与英国议会记录确认，威廉·贝利斯在约60名医学生面前进行生理演示，动物随后被杀死。两名旁听的瑞典反活体解剖活动者称，狗身上有此前实验尚未愈合的切口，并指控麻醉不足；贝利斯与同事则坚持动物得到了依法要求的麻醉。争议后来进入诽谤诉讼，贝利斯胜诉，因此本项目不能把目击者关于“全程清醒”的说法当成已裁定事实。可以确定的事实较窄，却已经足够：一只犬被作为教学实验对象接受操作并死亡；它是否被重复使用、麻醉是否充分，引发了法庭、议会与持续多年的公共抗议。1906年建立的纪念像没有保存它的名字，只称“棕色梗犬”。这一缺失本身也说明，实验记录保存了研究者和制度，却没有为动物保留身份。",
+    highlightedFactZh: "实验与死亡可以确认；麻醉是否充分和此前是否接受过实验仍属于有明确分歧的历史记录。",
+    harmCategory: ["动物实验", "公开教学", "处死"],
+    outcomeZh: "棕狗在公开生理实验后被杀死。",
+    aftermathZh: "事件引发诽谤诉讼、议会质询、纪念像争议与持续数年的反活体解剖抗议。",
+    uncertaintyNoteZh: "实验方与旁听者对麻醉、重复实验及动物意识状态的证词冲突；贝利斯在诽谤案中胜诉。",
+    contentWarningZh: "本条目涉及动物实验与处死，不展示实验现场。",
+    illustration: { src: "/animals/brown-dog-affair.png", altZh: "一只粗糙棕毛、双耳略微下垂的小型梗犬混种档案插画", width: 1024, height: 1024, promptFile: "image-prompts/brown-dog-affair.txt", generationStatus: "generated" },
+    referenceImage: { url: "https://myportfolio.ucl.ac.uk/view/view.php?id=84333", pageUrl: "https://myportfolio.ucl.ac.uk/view/view.php?id=84333", publisher: "UCL Library Services / UCL Records Office", license: "历史档案与纪念像照片权利状态不一，仅供研究", usageStatus: "research-only" },
+    sources: [
+      { id: "brown-dog-ucl-object", title: "Dog respirator", publisher: "UCL Museums and Collections", url: "https://www.ucl.ac.uk/museums-collections/ucl-science-collections/highlights/dog-respirator", sourceType: "official", accessedAt, language: "en", isPrimary: true },
+      { id: "brown-dog-hansard", title: "Vivisection — House of Commons debate", publisher: "UK Parliament Hansard", url: "https://hansard.parliament.uk/Commons/1904-02-18/debates/957a8bf8-1bc5-4cce-b5aa-3f28002cd010/Visisection", sourceType: "government", publishedAt: "1904-02-18", accessedAt, language: "en", isPrimary: true },
+      { id: "brown-dog-ucl-archive", title: "The Brown Dog Affair Papers", publisher: "UCL Library Services / UCL Records Office", url: "https://myportfolio.ucl.ac.uk/view/view.php?id=84333", sourceType: "research", accessedAt, language: "en", isPrimary: false },
+    ],
+    verification: { status: "partially-verified", verifiedAt: accessedAt, notes: "实验、死亡与后续争议可核实；麻醉和重复实验事实存在对立证词。" },
+    en: {
+      displayDate: "February 2, 1903", title: "An unnamed brown dog died after a public physiology experiment", shortTitle: "The unnamed dog on the laboratory bench", animalName: "The unnamed dog of the Brown Dog Affair", species: "Small terrier-type mixed dog", place: "University College London physiology lecture theatre", country: "United Kingdom",
+      summary: "An unnamed brown terrier-type dog was killed after a physiology experiment at UCL; disputes about anaesthesia and repeated use reached court and Parliament.",
+      infoBoardText: "William Bayliss demonstrated a procedure before about sixty students and the dog was then killed. Witnesses and the experimenters sharply disagreed about whether anaesthesia was adequate.",
+      fullStory: "On February 2, 1903, an unnamed small brown terrier-type dog was brought into a physiology lecture theatre at University College London. UCL collection records and a later parliamentary debate confirm that William Bayliss carried out a demonstration before about sixty medical students and that the dog was subsequently killed. Two Swedish anti-vivisection observers said they saw an unhealed wound from an earlier experiment and alleged inadequate anaesthesia. Bayliss and his colleagues maintained that the legally required anaesthetic had been used. Bayliss later won his libel action, so this archive does not present the claim that the dog was conscious throughout as an established finding. The narrower facts remain sufficient: the dog was used in a public experiment and killed, and contested questions about repeated use and anaesthesia led to litigation, parliamentary questions and years of protest. A memorial erected in 1906 preserved no individual name—only “the brown terrier dog.”",
+      highlightedFact: "The experiment and killing are documented; the adequacy of anaesthesia remains disputed.", harmCategory: ["animal experimentation", "public demonstration", "killing"], outcome: "The dog was killed after the physiology demonstration.", aftermath: "The case led to litigation, parliamentary questions, a memorial and years of anti-vivisection protest.", uncertaintyNote: "Witnesses and experimenters disputed anaesthesia, repeated use and consciousness; Bayliss won the libel case.", contentWarning: "This record concerns animal experimentation and killing. The procedure is not shown.", alt: "A small rough-coated brown terrier-type mixed dog standing quietly."
+    },
+  },
+];

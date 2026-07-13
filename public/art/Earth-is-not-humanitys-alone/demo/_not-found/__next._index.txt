@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[6222,[],""]
+3:I[1076,[],""]
+4:I[8323,["345","static/chunks/app/not-found-ef81de5a84c46738.js"],""]
+:HL["/art/Earth-is-not-humanitys-alone/demo/_next/static/css/d373c504b58e25b2.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/art/Earth-is-not-humanitys-alone/demo/_next/static/css/d373c504b58e25b2.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}],"notFound":[["$","main",null,{"className":"simple-page","children":[["$","p",null,{"className":"eyebrow","children":"404 / ARCHIVE GAP"}],["$","h1",null,{"children":["Record not found.",["$","br",null,{}],["$","small",null,{"children":"这里没有记录。"}]]}],["$","$L4",null,{"href":"/","children":"Return to the timeline / 返回时间线"}]]}],[]]}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"rFsoFfGjUl9tSA2gOGb74"}

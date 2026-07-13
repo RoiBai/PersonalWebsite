@@ -39,6 +39,7 @@ export type Project = {
   role?: string;
   platform?: string;
   status?: ProjectStatus;
+  statusLabel?: string;
   shortDescription: string;
   abstract?: string;
   tags: string[];
@@ -58,6 +59,70 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "earth-is-not-humanitys-alone",
+    title: "Earth Is Not Humanity’s Alone",
+    displayTitle: "Earth Is Not Humanity’s Alone",
+    year: 2026,
+    type: "art",
+    role:
+      "Archival research, content strategy, interaction design, visual design, and front-end development",
+    platform: "Next.js, React, TypeScript, Framer Motion",
+    status: "ongoing",
+    statusLabel: "Ongoing Project",
+    shortDescription:
+      "A bilingual, source-verified digital archive documenting animals whose deaths were caused by human actions.",
+    abstract:
+      "Earth Is Not Humanity’s Alone is an ongoing digital archive that makes individual animal lives visible through documented evidence rather than graphic imagery. The current edition presents 191 verified fatal events involving 133 animal types across a timeline spanning 1826 to 2026.\n\nVisitors move horizontally through time, encountering animals affected by experimentation, captivity, entertainment, war, pollution, poaching, habitat destruction, commercial exploitation, and other forms of human-caused harm. Each entry connects an individual life to its date, location, circumstances, outcome, and supporting sources.\n\nThe project is not intended to create a spectacle of suffering. Instead, it asks visitors to recognize animals as individual inhabitants of a shared planet—and to consider why so many lives become visible only after harm has already occurred.",
+    tags: [
+      "Animal Advocacy",
+      "Digital Archive",
+      "Data Storytelling",
+      "Interaction Design",
+      "Bilingual UI",
+      "Creative Coding",
+    ],
+    links: [
+      {
+        label: "Open Project",
+        url: "/art/Earth-is-not-humanitys-alone/demo",
+      },
+    ],
+    image: "/art/Earth-is-not-humanitys-alone/demo/og.png",
+    imageAlt:
+      "Earth Is Not Humanity’s Alone animal harm archive social preview",
+    route: "/art/earth-is-not-humanitys-alone",
+    featured: false,
+    whatIDid: [
+      "Researched and reviewed 286 animal-related records, publishing 191 events that met the project’s fatal-causation standard.",
+      "Developed an evidence framework requiring a documented death caused by human action.",
+      "Cross-checked every published event with at least two reliable sources, prioritizing court records, government documents, institutional statements, and original research.",
+      "Designed and developed a bilingual horizontal timeline with responsive scrolling, mobile swipe navigation, event previews, detailed records, and source lists.",
+      "Preserved conflicting information and uncertain details instead of forcing every case into a simplified narrative.",
+      "Created a consistent non-graphic portrait system that gives each animal a visible identity without reproducing wounds, bodies, or abuse footage.",
+      "Designed an interactive memorial of ten candles to communicate the scale of the archive and the records that remain undocumented.",
+      "Built the website as an accessible, responsive experience using React, Next.js, TypeScript, and motion-based interactions.",
+    ],
+    whyItMatters:
+      "The archive asks visitors to recognize animals as individual inhabitants of a shared planet and treats evidence, uncertainty, and documentation as essential parts of responsible advocacy.",
+    sections: [
+      {
+        title: "How the Archive Works",
+        body:
+          "Every public entry must meet a strict rule: the animal’s death must be documented and must have resulted from human action. Records involving survivors, natural deaths, or unconfirmed outcomes remain in the research archive rather than being presented as verified fatal events.\n\nEach case includes its source trail, verification status, and any unresolved differences between records. This approach treats uncertainty as part of responsible documentation rather than something to hide.",
+      },
+      {
+        title: "Visual and Interaction Design",
+        body:
+          "The horizontal timeline transforms archival research into a journey through time. Visitors scroll down to move right, gradually encountering individual animals instead of viewing the archive as a conventional list of statistics.\n\nNon-realistic portraits replace graphic photographs, while muted archival colors and field-note typography create a reflective rather than sensational atmosphere. On mobile devices, the experience becomes a card-based, swipeable timeline.",
+      },
+      {
+        title: "Call to Action",
+        body:
+          "The archive ends with ten memorial candles. One illuminated candle represents the 191 verified events currently published—roughly one tenth of a working estimate of approximately 2,000 historical records that may meet the same evidence standard. The nine unlit candles represent lives and records that remain outside the timeline.\n\nThis project calls for enforceable animal-protection laws that prohibit deliberate cruelty and killing, establish basic safeguards for companion, working, wild, and captive animals, and require meaningful investigation, enforcement, penalties, and public accountability.\n\nLighting a candle is only a symbolic gesture. Real protection requires legislation, enforcement, documentation, and the recognition that Earth does not belong to humanity alone.",
+      },
+    ],
+  },
   {
     id: "personamail",
     title:

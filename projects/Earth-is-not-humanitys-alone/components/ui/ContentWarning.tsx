@@ -1,0 +1,1 @@
+export function ContentWarning({ children, label }: { children: React.ReactNode; label: string }) { return <div className="content-warning"><span aria-hidden="true">!</span><p><strong>{label}</strong>{children}</p></div>; }

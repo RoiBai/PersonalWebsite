@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: transparent animal portrait for an investigative timeline
+Subject: Three working sled dogs; northern-breed mix; calm standing group.
+Reference role: use the public reference page recorded in data/events.ts only to verify species, proportions and stated identifying features; do not reproduce the photograph composition.
+Style: clumsy, scribbly, and utterly pathetic way possible. Use same color, and make it look like it was drawn in MS Paint with a mouse. It should be vaguely similar but also not really, kind of matching but also off in a confusing, awkward way, with that low-quality pixel-by-pixel feel that really emphasizes how ridiculously bad it is.
+Consistency: same limited palette, same outline thickness, same 1:1 canvas, same visual scale, visibly uneven fill areas, awkward anatomy, low-resolution MS Paint feeling, intentionally amateur but identifiable.
+Output preparation: perfectly flat solid #00ff00 chroma-key background, no shadow, gradient or texture, generous padding; final converted to transparent PNG.
+Constraints: no text, no typography, no watermark, no decorative frame, no gore, no visible wounds, no blood, no harm scene, full body or readable half body, roughly three-quarter view.
+
