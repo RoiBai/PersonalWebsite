@@ -1,0 +1,25 @@
+Create one respectful archive portrait for the animal event below.
+
+Subject: The Mauchline brindle dog
+Species: Domestic dog
+Identity and verified features: Archive illustration of The Mauchline brindle dog, Domestic dog.
+Place and date: Mauchline, Scotland; October 2022
+Pose: calm, still, full-body or clearly readable three-quarter body; do not depict the harmful event.
+
+Required global style (verbatim):
+“clumsy, scribbly, and utterly pathetic way possible. Use same color, and make it look like it was drawn in MS Paint with a mouse. It should be vaguely similar but also not really, kind of matching but also off in a confusing, awkward way, with that low-quality pixel-by-pixel feel that really emphasizes how ridiculously bad it is.”
+
+Shared restrictions:
+- transparent background
+- no text, typography, watermark, logo, or decorative frame
+- no gore, visible wounds, blood, corpse, restraint, weapon, explosion, crash, cage, or abuse scene
+- jagged mouse-drawn outline, visibly uneven fill areas, awkward anatomy
+- low-resolution MS Paint feeling while remaining identifiable as the correct species
+- limited archival palette: charcoal #2b2926, warm paper #eee7e1, sage #8fa99b, dusty rose #c87586, muted rust #a95845
+- consistent dark outline thickness, 1:1 canvas, subject occupying about 72% of the canvas
+- roughly three-quarter view, facing slightly toward timeline travel (right)
+- no cast shadow beyond a tiny rough charcoal grounding scribble
+
+Reference pages used only to verify identity/species/proportions; do not reproduce or publish source photographs:
+- Crown Office and Procurator Fiscal Service: https://www.copfs.gov.uk/about-copfs/news/16-4-man-jailed-for-dog-cruelty-and-banned-from-owning-animals-for-ten-years/
+- Scottish SPCA: https://www.scottishspca.org/news/man-sentenced-after-dog-found-collapsed-in-crate

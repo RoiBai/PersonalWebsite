@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/art/Earth-is-not-humanitys-alone/demo",
+      "destination": "/art/Earth-is-not-humanitys-alone/demo/index.html"
+    },
+    {
+      "source": "/art/Earth-is-not-humanitys-alone/demo/",
+      "destination": "/art/Earth-is-not-humanitys-alone/demo/index.html"
+    },
+    {
       "source": "/art/tarot-site/demo",
       "destination": "https://tarot-coral-gamma.vercel.app/"
     },

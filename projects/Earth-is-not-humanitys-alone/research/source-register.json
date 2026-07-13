@@ -1,0 +1,2301 @@
+{
+  "lastVerifiedAt": "2026-07-13",
+  "policy": "Every included event has at least two sources and at least one primary or contemporaneous institutional record. Conflicts are preserved in the event data. The public timeline applies a confirmed-human-caused-fatality audit and omits adjacent exact-species duplicates without deleting them from the research library.",
+  "events": [
+    {
+      "eventId": "chunee-exeter-exchange",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "chunee-exeter-exchange-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "eldey-last-great-auks",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "eldey-last-great-auks-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "balaclava-light-brigade-horses",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "balaclava-nam-order"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "brown-dog-affair",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "brown-dog-ucl-object",
+        "brown-dog-hansard"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "martha-1914",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "martha-smithsonian"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "mary-elephant-hanging",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mary-elephant-hanging-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "incas-carolina-parakeet",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "incas-carolina-parakeet-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "jackie-1918",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "jackie-museum"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "cher-ami-1918",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "cher-smithsonian"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "booming-ben-heath-hen",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "booming-ben-heath-hen-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "australia-emu-cull",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "australia-emu-cull-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "charge-light-brigade-horses",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "charge-light-brigade-horses-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "thylacine-1936",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "thylacine-qvmag"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "jesse-james-film-horse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "jesse-james-film-horse-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "gander-1941",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "gander-vac"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "chips-war-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "chips-war-dog-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ueno-wartime-elephants",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ueno-wartime-elephants-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "simon-1949",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "simon-pdsa"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "albert-ii-v2",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "albert-ii-v2-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "albert-iv-v2-impact",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "albert-iv-v2-impact-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "v2-mouse-impact-1950",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "v2-mouse-impact-1950-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "dezik-lisa-rocket-failure",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "dezik-lisa-rocket-failure-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "sergeant-reckless-korean-war",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sergeant-reckless-korean-war-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "laika-1957",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "laika-nasa"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "mia-one-mouse-rocket-destruction",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mia-one-mouse-rocket-destruction-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "laska-mouse-reentry-death",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "laska-mouse-reentry-death-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "gordo-jupiter",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "gordo-jupiter-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "able-baker-1959",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "able-nasa"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "able-postflight-operation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "able-postflight-operation-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "discoverer-three-mice",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "discoverer-three-mice-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "jupiter-fourteen-mice",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "jupiter-fourteen-mice-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "bars-lisichka-launch-explosion",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bars-lisichka-launch-explosion-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "belka-strelka-orbit",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "belka-strelka-orbit-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "pchyolka-mushka-destroyed",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pchyolka-mushka-destroyed-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ham-1961",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ham-report"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "goliath-atlas-rocket",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "goliath-atlas-rocket-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "enos-1961",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "enos-nasa-report"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "felicette-1963",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "felicette-defense"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "veterok-ugolyok",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "veterok-ugolyok-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "namu-orca-captivity",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "namu-orca-captivity-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "nemo-vietnam-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "nemo-vietnam-dog-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "zond-six-biological-payload",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "zond-six-biological-payload-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "bonny-biosatellite-three",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bonny-biosatellite-three-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "tokitae-1970",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "tokitae-necropsy"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "harlow-isolation-monkeys",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "harlow-isolation-monkeys-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "skylab-spiders-1973",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "spiders-nasa"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ruffian-racehorse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ruffian-racehorse-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "seveso-animal-deaths",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "seveso-animal-deaths-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mali-1977",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mali-pna"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "digit-gorilla-poaching",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "digit-gorilla-poaching-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "hugo-orca-death",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "hugo-orca-death-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "silver-spring-1981",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "silver-gao"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "sefton-hyde-park-horse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sefton-hyde-park-horse-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "peanut-1984",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "peanut-mdc"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "penn-head-injury-baboons",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "penn-head-injury-baboons-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "sandoz-rhine-fish",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sandoz-rhine-fish-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "kauai-oo-last-call",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kauai-oo-last-call-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "exxon-otters-1989",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "exxon-noaa"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "kandu-v-tank-collision",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kandu-v-tank-collision-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "go-for-wand-racehorse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "go-for-wand-racehorse-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "sarajevo-zoo-last-bear",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sarajevo-zoo-last-bear-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "gucci-dog-cruelty-law",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "gucci-dog-cruelty-law-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "tyke-1994",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tyke-hawaii"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "marjan-1995",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "marjan-zoo-report"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "swainsons-hawks-pesticide",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "swainsons-hawks-pesticide-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "isabela-goats-1997",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "isabela-gc"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "multik-bion-eleven",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "multik-bion-eleven-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "motala-1999",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "motala-fae"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "last-wild-spix-macaw",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "last-wild-spix-macaw-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "celia-pyrenean-ibex",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "celia-pyrenean-ibex-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "tisza-fish-2000",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tisza-unep"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "bahamas-sonar-whales",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bahamas-sonar-whales-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "uk-foot-mouth-cull",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "uk-foot-mouth-cull-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "sirius-port-authority-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sirius-port-authority-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "alala-last-wild-pair",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "alala-last-wild-pair-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "keiko-orca-release",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "keiko-orca-release-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "qiqi-baiji-dolphin",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "qiqi-baiji-dolphin-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "pony-orangutan-rescue",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pony-orangutan-rescue-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "dolly-2003",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "dolly-roslin"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "ming-harlem-tiger",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ming-harlem-tiger-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "poouli-last-captive-bird",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "poouli-last-captive-bird-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "beauty-2005",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "beauty-bopnw"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "winter-2005",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "winter-cma"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ming-ocean-quahog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ming-ocean-quahog-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "luna-l98-orca",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "luna-l98-orca-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "bruno-jj1-bear",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bruno-jj1-bear-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "leo-snow-leopard-rescue",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "leo-snow-leopard-rescue-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "barbaro-racehorse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "barbaro-racehorse-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "virunga-gorillas-2007",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "virunga-park"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "shambo-2007",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "shambo-senedd"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "maggie-alaska-relocation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "maggie-alaska-relocation-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "tatiana-2007",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tatiana-usda"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "eight-belles-2008",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "eight-khra"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "madagascar-melon-whales",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "madagascar-melon-whales-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "kenny-inbred-white-tiger",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kenny-inbred-white-tiger-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "sasha-2008",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sasha-pdsa"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "nitro-kennel-dogs",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "nitro-kennel-dogs-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "travis-2009",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "travis-prosecutor"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "phoenix-baltimore-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "phoenix-baltimore-dog-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "oreo-dog-euthanasia",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "oreo-dog-euthanasia-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "pepe-colombia-hippo",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pepe-colombia-hippo-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "susie-dog-north-carolina",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "susie-dog-north-carolina-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "christmas-island-pipistrelle-last-call",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "christmas-island-pipistrelle-last-call-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "netherlands-q-fever-goats",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "netherlands-q-fever-goats-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "buddy-dog-dragging",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "buddy-dog-dragging-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "tilikum-2010",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tilikum-court"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "deepwater-wildlife-2010",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "dwh-noaa"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "whistler-2010",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "whistler-court",
+        "whistler-bc"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "silent-knight-2010",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "silent-tmmc"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "anne-2011",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "anne-court",
+        "anne-parliament"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "patrick-2011",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "patrick-bill"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "whooping-crane-2011",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "crane-usfws"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "zanesville-2011",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "zanesville-aspca"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "thandi-rhino-poaching",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "thandi-rhino-poaching-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "luck-production-horses",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "luck-production-horses-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "lucca-military-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lucca-military-dog-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "lonesome-george-pinta",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lonesome-george-pinta-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "lennox-belfast-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lennox-belfast-dog-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "o-six-2012",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "osix-nps"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "lucy-puppy-farm-law",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lucy-puppy-farm-law-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "lolong-2013",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lolong-denr"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "ape-fbi-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ape-fbi-k9-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "stody-poisoned-raptors",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "stody-poisoned-raptors-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "wilsonville-bumblebee-kill",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "wilsonville-bumblebee-kill-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "ronin-glendale-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ronin-glendale-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "puppy-doe-2013",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "puppydoe-taskforce"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "rocco-pittsburgh-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "rocco-pittsburgh-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "marius-2014",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "marius-eaza"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "copenhagen-four-lions",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "copenhagen-four-lions-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mountain-bull-elephant",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mountain-bull-elephant-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "satao-2014",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "satao-report"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "raju-elephant-rescue",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "raju-elephant-rescue-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "kye-oklahoma-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kye-oklahoma-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "daniza-bear-capture",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "daniza-bear-capture-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "sandra-orangutan-rights",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sandra-orangutan-rights-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "ponso-abandoned-chimpanzee",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ponso-abandoned-chimpanzee-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "nanuq-beluga-breeding",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "nanuq-beluga-breeding-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "selby-canal-otter",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "selby-canal-otter-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ustad-t24-relocation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ustad-t24-relocation-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "caitlyn-2015",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "caitlyn-cas"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "us-hpai-poultry-depopulation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "us-hpai-poultry-depopulation-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "cecil-2015",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "cecil-zpwma",
+        "cecil-wildcru"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "hope-rhino-mutilation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "hope-rhino-mutilation-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ike-vancouver-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ike-vancouver-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "yongki-elephant-killed",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "yongki-elephant-killed-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "samarco-rio-doce-fish",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "samarco-rio-doce-fish-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "diesel-2015",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "diesel-pdsa"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "scarface-grizzly-illegal-killing",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "scarface-grizzly-illegal-killing-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "midway-albatross-2015",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "albatross-usfws"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "charlotte-2015",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "charlotte-hpd"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "jethro-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "jethro-canton"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "krijger-norfolk-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "krijger-norfolk-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "kobus-omaha-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kobus-omaha-k9-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "mohawk-nairobi-lion",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mohawk-nairobi-lion-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "yellowstone-carried-bison-calf",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "yellowstone-carried-bison-calf-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "hanako-inokashira-elephant",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "hanako-inokashira-elephant-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "harambe-2016",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "harambe-zoo",
+        "harambe-zoo-followup"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "bramble-cay-melomys-extinction",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bramble-cay-melomys-extinction-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "river-wid-fish-kill",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "river-wid-fish-kill-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "juma-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "juma-army"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "arturo-polar-bear",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "arturo-polar-bear-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "libre-2016",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "libre-da"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "pinky-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pinky-police"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "khan-younis-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "khan-fourpaws"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "toughie-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "toughie-garden"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "finn-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "finn-gov"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "kentaro-2016",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kentaro-life"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "pizza-mall-polar-bear",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pizza-mall-polar-bear-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "jardo-boise-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "jardo-boise-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "satao-two-elephant",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "satao-two-elephant-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "vince-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "vince-zoo"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "bank-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bank-cu"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mosul-zoo-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mosul-fourpaws"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "yellowstone-white-wolf",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "yellowstone-white-wolf-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "xanda-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "xanda-wildcru"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "bear-148-killed",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bear-148-killed-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "snooty-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "snooty-museum"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "awassi-express-sheep",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "awassi-express-sheep-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "ollie-dog-stabbing",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "ollie-dog-stabbing-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "vaquita-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "vaquita-cpr"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "nosey-2017",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "nosey-usda"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "sudan-northern-white-rhino",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "sudan-northern-white-rhino-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "madagascar-radiated-tortoises",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "madagascar-radiated-tortoises-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "inuka-polar-bear-euthanasia",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "inuka-polar-bear-euthanasia-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "thailand-plastic-pilot-whale",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "thailand-plastic-pilot-whale-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "tsavo-rhino-relocation-deaths",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tsavo-rhino-relocation-deaths-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "margaash-snow-leopard",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "margaash-snow-leopard-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "avni-tigress-shot",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "avni-tigress-shot-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "spitfire-wolf-926f",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "spitfire-wolf-926f-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "cigo-palm-beach-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "cigo-palm-beach-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "george-snail-2019",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "george-dlnr"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "chucky-bexar-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "chucky-bexar-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "p56-mountain-lion",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "p56-mountain-lion-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "tommie-richmond-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tommie-richmond-dog-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "hope-2019",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "hope-bksda"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "philippines-plastic-whale",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "philippines-plastic-whale-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "kuno-military-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kuno-military-dog-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "springholm-poisoned-birds",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "springholm-poisoned-birds-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "fair-oaks-calves",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "fair-oaks-calves-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "botswana-vultures-2019",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "vultures-bw"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "voortrekker-desert-elephant",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "voortrekker-desert-elephant-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "marium-2019",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "marium-thai"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "udny-brown-hare",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "udny-brown-hare-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "snake-eyes-right-whale",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "snake-eyes-right-whale-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mongolian-groom-racehorse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mongolian-groom-racehorse-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mali-polar-bear-thailand",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mali-polar-bear-thailand-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "queen-hind-sheep",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "queen-hind-sheep-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "cape-bridgewater-koalas",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "cape-bridgewater-koalas-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "kenya-white-giraffes",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kenya-white-giraffes-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "takaya-2020",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "takaya-cos"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "honey-inubosaki-dolphin",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "honey-inubosaki-dolphin-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "krystal-scott-animals",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "krystal-scott-animals-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "iowa-select-pigs-ventilation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "iowa-select-pigs-ventilation-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "rafiki-2020",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "rafiki-court"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "mike-karibuna-chimpanzees",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mike-karibuna-chimpanzees-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "mink-2020",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mink-dvfa"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "kaavan-2020",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "kaavan-court",
+        "kaavan-fourpaws"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "skye-wolf-isle",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "skye-wolf-isle-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "cottontail-right-whale",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "cottontail-right-whale-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "snow-cone-2021",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "snowcone-noaa"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "bella-rhino-killed",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bella-rhino-killed-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "freddie-2021",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "freddie-hospital"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "kitt-braintree-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "kitt-braintree-k9-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "mopane-lion-hunt",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mopane-lion-hunt-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "geronimo-2021",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "geronimo-defra"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "faroe-dolphins-2021",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "faroe-gov"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "lucy-edmonton-elephant",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lucy-edmonton-elephant-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "or93-vehicle-strike",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "or93-vehicle-strike-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "eko-naples-tiger",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "eko-naples-tiger-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "pangolin-lucky-trafficking",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pangolin-lucky-trafficking-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "jedi-seattle-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "jedi-seattle-k9-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "estrellita-2022",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "estrellita-court"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "tolstoy-2022",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "tolstoy-biglife"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "feldman-2022",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "feldman-park"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "esi-wind-turbine-eagles",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "esi-wind-turbine-eagles-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "envigo-2022",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "envigo-doj",
+        "envigo-doj-plea"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "happy-elephant-court",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "happy-elephant-court-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "hollister-california-condor",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "hollister-california-condor-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "frankie-2022",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "frankie-mass"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "cedar-goat-slaughter",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "cedar-goat-slaughter-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "fife-cat-wildlife-killings",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "fife-cat-wildlife-killings-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "barwon-neglected-sheep",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "barwon-neglected-sheep-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "freya-2022",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "freya-vet"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "fran-humpback-whale",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "fran-humpback-whale-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "moon-2022",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "moon-bcwhales"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "yampil-2022",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "yampil-zoo"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mauchline-crated-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mauchline-crated-dog-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "raymond-phillips-cat",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "raymond-phillips-cat-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "p22-2022",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "p22-nps"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "hillandale-hen-fire",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "hillandale-hen-fire-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "east-palestine-aquatic-life",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "east-palestine-aquatic-life-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "kiska-2023",
+      "sourceCount": 3,
+      "primarySourceIds": [
+        "kiska-ontario"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "south-fork-dairy-fire",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "south-fork-dairy-fire-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "nova-kakhovka-zoo",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "nova-kakhovka-zoo-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "papillon-m49-bear",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "papillon-m49-bear-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "maple-leaf-mel-racehorse",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "maple-leaf-mel-racehorse-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "amarena-2023",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "amarena-park"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "mccormick-place-bird-collision",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "mccormick-place-bird-collision-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "romeo-manatee-isolation",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "romeo-manatee-isolation-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "broko-2023",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "broko-csp"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "australia-reptiles-2024",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "reptiles-nsw"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "knubbel-2024",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "knubbel-waldrapp"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "right-whale-5120-2024",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "whale5120-noaa"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "bronny-daycare-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "bronny-daycare-dog-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "al-kuwait-cattle",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "al-kuwait-cattle-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "flaco-2024",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "flaco-wcs"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "cody-roberts-wolf",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "cody-roberts-wolf-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "juno-calf-right-whale",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "juno-calf-right-whale-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "dexter-dog-florida",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "dexter-dog-florida-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "rivan-virginia-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "rivan-virginia-k9-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "air-export-sheep-indonesia",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "air-export-sheep-indonesia-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "appa-daycare-dog",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "appa-daycare-dog-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "trooper-hurricane-milton",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "trooper-hurricane-milton-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "grizzly-399-vehicle",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "grizzly-399-vehicle-p"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "peanut-fred-euthanasia",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "peanut-fred-euthanasia-p"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "belfast-starved-pets",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "belfast-starved-pets-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "daybreak-starving-chickens",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "daybreak-starving-chickens-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "yellowstone-grizzly-2025",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "grizzly-nps"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "nuremberg-baboon-cull",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "nuremberg-baboon-cull-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "archer-2025",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "archer-hpd"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "lujan-zoo-big-cat-deaths",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "lujan-zoo-big-cat-deaths-primary"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "division-2026",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "division-noaa"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "palawan-pangolin-2026",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "pangolin-pia"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "marine-trafficking-2026",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "marine-arg"
+      ],
+      "status": "partially-verified"
+    },
+    {
+      "eventId": "knight-chesterfield-k9",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "knight-chesterfield-k9-primary"
+      ],
+      "status": "verified"
+    },
+    {
+      "eventId": "vethos-2026",
+      "sourceCount": 2,
+      "primarySourceIds": [
+        "vethos-jcpd"
+      ],
+      "status": "partially-verified"
+    }
+  ]
+}

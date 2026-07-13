@@ -1,0 +1,25 @@
+Create one respectful archive portrait for the animal event below.
+
+Subject: East Palestine aquatic animals
+Species: Fish, amphibians, and other aquatic animals
+Identity and verified features: Archive illustration of East Palestine aquatic animals, Fish, amphibians, and other aquatic animals.
+Place and date: East Palestine, Ohio; February 3, 2023
+Pose: calm, still, full-body or clearly readable three-quarter body; do not depict the harmful event.
+
+Required global style (verbatim):
+“clumsy, scribbly, and utterly pathetic way possible. Use same color, and make it look like it was drawn in MS Paint with a mouse. It should be vaguely similar but also not really, kind of matching but also off in a confusing, awkward way, with that low-quality pixel-by-pixel feel that really emphasizes how ridiculously bad it is.”
+
+Shared restrictions:
+- transparent background
+- no text, typography, watermark, logo, or decorative frame
+- no gore, visible wounds, blood, corpse, restraint, weapon, explosion, crash, cage, or abuse scene
+- jagged mouse-drawn outline, visibly uneven fill areas, awkward anatomy
+- low-resolution MS Paint feeling while remaining identifiable as the correct species
+- limited archival palette: charcoal #2b2926, warm paper #eee7e1, sage #8fa99b, dusty rose #c87586, muted rust #a95845
+- consistent dark outline thickness, 1:1 canvas, subject occupying about 72% of the canvas
+- roughly three-quarter view, facing slightly toward timeline travel (right)
+- no cast shadow beyond a tiny rough charcoal grounding scribble
+
+Reference pages used only to verify identity/species/proportions; do not reproduce or publish source photographs:
+- Village of East Palestine / U.S. EPA TASC: https://www.eastpalestine-oh.gov/wp-content/uploads/2023/12/TD-R5-3.1.14-East-Palestine-TASC-Environmental-Data-Review-10-23-23-final_508.pdf
+- Axios: https://www.axios.com/2023/02/24/ohio-train-derailment-animals-killed-water

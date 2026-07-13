@@ -53,7 +53,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
         {project.status ? (
           <p className="mt-auto pt-5 text-xs font-semibold uppercase tracking-[0.16em] text-graphite">
-            {project.status}
+            {project.statusLabel ?? project.status}
           </p>
         ) : null}
       </div>

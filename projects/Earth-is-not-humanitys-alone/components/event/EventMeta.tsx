@@ -1,0 +1,3 @@
+import type { AnimalEvent } from "@/types/event";
+import { useLanguage } from "@/components/ui/LanguageProvider"; import { eventText, ui } from "@/lib/i18n";
+export function EventMeta({ event }: { event: AnimalEvent }) { const {locale}=useLanguage(); const text=eventText(event,locale),t=ui[locale]; return <dl className="event-meta"><div><dt>{t.date}</dt><dd>{text.displayDate}</dd></div><div><dt>{t.place}</dt><dd>{text.place}, {text.country}</dd></div><div><dt>{t.category}</dt><dd>{text.harmCategory.join(" · ")}</dd></div><div><dt>{t.status}</dt><dd>{event.verification.status === "verified" ? t.verifiedLabel : t.partial}</dd></div></dl>; }

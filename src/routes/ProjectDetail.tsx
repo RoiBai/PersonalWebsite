@@ -60,7 +60,7 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-ember">
-              {project.year} · {project.status ?? project.type}
+              {project.year} · {project.statusLabel ?? project.status ?? project.type}
             </p>
             <h1 className="mt-4 text-balance text-4xl font-semibold leading-tight text-ink md:text-6xl">
               {project.title}
@@ -148,7 +148,11 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
         <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr]">
           <div>
             <h2 className="text-3xl font-semibold text-ink">Overview</h2>
-            <p className="mt-4 text-lg leading-8 text-graphite">{project.abstract}</p>
+            <div className="mt-4 space-y-4 text-lg leading-8 text-graphite">
+              {project.abstract?.split("\n\n").map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
           </div>
           <div className="rounded-lg border border-ink/10 bg-white/55 p-6">
             <h2 className="text-2xl font-semibold text-ink">What I did</h2>
@@ -200,7 +204,11 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
                 className="interactive-surface rounded-lg border border-ink/10 bg-paper/75 p-6"
               >
                 <h2 className="text-2xl font-semibold text-ink">{section.title}</h2>
-                <p className="mt-3 text-sm leading-6 text-graphite">{section.body}</p>
+                <div className="mt-3 space-y-3 text-sm leading-6 text-graphite">
+                  {section.body.split("\n\n").map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
                 {section.items?.length ? (
                   <ul className="mt-4 space-y-2 text-sm leading-6 text-graphite">
                     {section.items.map((item) => (
