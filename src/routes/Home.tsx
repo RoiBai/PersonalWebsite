@@ -2,31 +2,13 @@ import { Link } from "react-router-dom";
 import Entropy from "../components/Entropy";
 import Hero from "../components/Hero";
 import PlogTimeline from "../components/PlogTimeline";
-import ProjectGrid from "../components/ProjectGrid";
+import ResearchJourney from "../components/ResearchJourney";
 import SectionHeader from "../components/SectionHeader";
 import VisitorCounter from "../components/VisitorCounter";
 import { plogItems } from "../data/plog";
-import { getProjectsByType, projectsByNewest } from "../data/projects";
+import { getProjectsByType } from "../data/projects";
 
 export default function Home() {
-  const selectedIds = [
-    "tarot-reflection",
-    "rewind-past-self",
-    "idea-weaver",
-    "loofa-man",
-    "zoi",
-    "wall",
-    "space",
-    "ambulance-rush",
-    "monster-between-us",
-    "with-me",
-    "killing-brain",
-  ];
-
-  const selected = projectsByNewest.filter((project) =>
-    selectedIds.includes(project.id)
-  );
-
   return (
     <>
       <Hero />
@@ -36,15 +18,15 @@ export default function Home() {
       <section className="section selected-work-section">
         <div className="selected-work-heading">
           <SectionHeader
-            eyebrow="Selected Objects"
+            eyebrow="Research Journey"
             title="Pieces to open, test, read, and play."
-            description="Across screen-based systems, spatial computing, games, and tangible interaction, I build experiences that are playful, reflective, and human-centered."
+            description="A timeline of how lived moments, recurring questions, and sudden sparks became games, companion systems, tangible objects, and reflective interfaces."
           />
           <div className="selected-work-animation" aria-hidden="true">
             <Entropy size={380} leftLabel="form" rightLabel="drift" />
           </div>
         </div>
-        <ProjectGrid projects={selected} />
+        <ResearchJourney />
       </section>
 
       <section className="section bg-white/45">
