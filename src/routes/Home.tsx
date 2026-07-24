@@ -80,7 +80,11 @@ export default function Home() {
               "/art",
               "Camera collage, browser motion, perception, and digital space.",
             ],
-            ["Games", "/games", "Newsgames and experimental Unity browser games."],
+            [
+              "Games",
+              "/games",
+              "Newsgames, AI Agent simulations, and browser experiments.",
+            ],
             [
               "Tangible",
               "/tangible",

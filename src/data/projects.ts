@@ -254,6 +254,116 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "forest-trending",
+    title: "森林热搜 Forest Trending",
+    displayTitle: "Forest Trending",
+    year: 2026,
+    type: "game",
+    venue: "Agentland Game Jam · June 2026",
+    role:
+      "Creator — game design, interaction design, AI Agent system, visual design, and development",
+    platform: "Web, AI Agents, PlayKit",
+    status: "released",
+    statusLabel: "Excellence Award",
+    shortDescription:
+      "A pixel-art AI Agent public-opinion simulation where five daily stories are discussed, distorted, amplified, and clarified by a society of forest animals.",
+    abstract:
+      "Forest Trending is a pixel-art AI Agent public-opinion simulation created for the Agentland Game Jam in June 2026, where it received an Excellence Award.\n\nEach morning, five stories arrive on the forest noticeboard. Players choose three animals for the daily duty team, then spend limited action points to amplify, cool down, fact-check, flag, protect, delay, or leave a story alone. Every intervention has trade-offs: verification may move slower than a rumor, while suppressing discussion can push speculation out of sight.\n\nThe goal is not to uncover one definitive truth. It is to care for a small society whose characters talk, misread, influence one another, and remember what happened—keeping fear from spreading too quickly without letting trust quietly disappear.",
+    tags: [
+      "AI Agents",
+      "Social Simulation",
+      "Media Literacy",
+      "Pixel Art",
+      "Web Game",
+      "Game Jam",
+    ],
+    links: [
+      {
+        label: "Play on PlayKit",
+        url: "https://space.playkit.ai/games/forest-trending",
+      },
+    ],
+    image: "/images/forest-trending/cover.png",
+    imageAlt:
+      "Forest Trending pixel-art cover showing animals gathering around a forest noticeboard",
+    route: "/games/forest-trending",
+    featured: true,
+    whatIDid: [
+      "Designed a daily loop around five incoming stories, a three-animal duty team, limited action points, and an end-of-day forest report.",
+      "Created intervention cards whose benefits and side effects turn moderation, verification, protection, and inaction into strategic choices.",
+      "Built an AI Agent society in which animals respond through distinct personalities, emotions, relationships, trust levels, memories, and information-sharing tendencies.",
+      "Developed the warm pixel-art forest, character cast, noticeboard, calendar, trending cards, and newspaper-like reporting interface.",
+    ],
+    whyItMatters:
+      "The game makes media literacy and platform governance tangible by showing how ordinary information changes as it passes through anxiety, personality, relationships, moderation choices, and group attention.",
+    sections: [
+      {
+        title: "Core Experience",
+        body:
+          "Every session represents one day in the forest. Five stories enter the noticeboard, and the player chooses three animals—such as the evidence-seeking owl, calming panda, rumor-amplifying crow, protective rabbit, or persuasive fox—to form the duty team.",
+        items: [
+          "Observe five daily trending stories and the reactions gathering around them.",
+          "Use limited action points to shape the direction and reach of one story at a time.",
+          "Watch the same message become interpreted, exaggerated, misread, or clarified.",
+          "Read the end-of-day report to trace how an original message became its final rumor.",
+        ],
+      },
+      {
+        title: "An AI Agent Society",
+        body:
+          "The animals are driven by an AI Agent system rather than a fixed dialogue tree. Each character has a personality, mood, trust level, anxiety, influence, memory, and tendency to spread information. Their short comments, rumor variants, discussion paths, and daily report change with the story, the player's interventions, the duty team, and the state of the forest.",
+      },
+      {
+        title: "Information Has Consequences",
+        body:
+          "Heat is not truth, suppression is not resolution, and fact-checking does not always catch up with a fast-moving rumor. A harmless tool announcement can become a fear of replacement; a service adjustment can become a story about exclusion. The game exposes each step in that transformation and asks the player to balance visibility, safety, trust, and uncertainty.",
+      },
+      {
+        title: "A Playful Media-Literacy Game",
+        body:
+          "The warm pixel-art setting makes a complex subject approachable without turning it into a lecture. Players do not need to type: they click, observe, and choose. Even doing nothing changes the forest, making silence itself part of the simulation.",
+      },
+    ],
+    galleryTitle: "Inside the forest",
+    gallery: [
+      {
+        src: "/images/forest-trending/screenshot-01.png",
+        alt: "Forest Trending opening screen with a June 2026 calendar and daily forest simulation controls",
+        caption:
+          "Each day begins with a new set of five stories and a forest whose trust can rise or fall.",
+        fit: "contain",
+      },
+      {
+        src: "/images/forest-trending/screenshot-02.png",
+        alt: "Forest Trending animal duty team selection interface",
+        caption:
+          "Players select three animals whose abilities and personalities shape the day's response.",
+        fit: "contain",
+      },
+      {
+        src: "/images/forest-trending/screenshot-03.png",
+        alt: "Forest Trending story detail showing the official notice, rumor versions, animal comments, and intervention cards",
+        caption:
+          "The detail view connects the official notice, the forest's interpretation, rumor versions, animal comments, and player actions.",
+        fit: "contain",
+      },
+      {
+        src: "/images/forest-trending/screenshot-04.png",
+        alt: "Forest Trending forest playfield with animal reactions, trending stories, and intervention cards",
+        caption:
+          "Reactions surface across the forest while limited-action interventions cool down, verify, protect, delay, or amplify a story.",
+        fit: "contain",
+      },
+      {
+        src: "/images/forest-trending/screenshot-05.png",
+        alt: "Forest Trending end-of-day forest newspaper and information transformation report",
+        caption:
+          "The daily report traces the day's biggest misunderstanding and how the original message changed.",
+        fit: "contain",
+      },
+    ],
+  },
+  {
     id: "loofa-man",
     title: "Taste of Connection / Loofa Man / 丝瓜汤",
     displayTitle: "Taste of Connection",
