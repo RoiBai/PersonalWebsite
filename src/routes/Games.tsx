@@ -12,8 +12,8 @@ export default function Games() {
           <p className="games-title-kicker">Games</p>
           <h1>Playable systems for public issues, humor, and experiment.</h1>
           <p>
-            Game projects include newsgames, Unity web builds, and small
-            browser-playable prototypes.
+            Game projects include newsgames, AI Agent simulations, Unity web
+            builds, and small browser-playable prototypes.
           </p>
         </div>
         <GamePongTitle />
