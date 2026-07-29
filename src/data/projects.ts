@@ -63,6 +63,67 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "bridge-reading",
+    title: "Bridge Reading",
+    displayTitle: "Bridge Reading",
+    year: 2026,
+    type: "ongoing",
+    role:
+      "Product concept, reading experience design, interaction design, visual direction, and front-end development",
+    platform: "Next.js, React, TypeScript, responsive web",
+    status: "ongoing",
+    statusLabel: "Ongoing Project",
+    shortDescription:
+      "An English-first bilingual reading prototype that gradually moves from interactive scenes to independent reading, with optional Chinese translation and a clue-based case map.",
+    abstract:
+      "Bridge Reading explores how a digital interface can support readers through a mystery novel without permanently replacing the book. The experience begins with cinematic dialogue and guided investigation, then gradually removes visual scaffolding as the reader becomes more confident.\n\nEnglish remains visible by default, while Chinese translation appears sentence by sentence on request. Collectible evidence, a clue bag, and a case map turn close reading into an investigation while preserving a calm, book-like reading rhythm.",
+    tags: [
+      "Reading Experience",
+      "Bilingual UI",
+      "Interaction Design",
+      "Narrative Interface",
+      "Gamified Reading",
+      "Responsive Web",
+    ],
+    links: [],
+    image: "/images/bridge-reading/cover.png",
+    imageAlt:
+      "Bridge Reading cover for the A Good Girl’s Guide to Murder interactive reading prototype",
+    imageFit: "cover",
+    route: "/ongoing/bridge-reading",
+    featured: true,
+    whatIDid: [
+      "Designed a four-stage reading journey that moves from cinematic guidance to independent, vertically scrolling reading.",
+      "Created sentence-level translation controls so English stays primary and Chinese appears only when requested.",
+      "Developed a clue bag and progressive case map that reward close reading without revealing future information.",
+      "Built responsive desktop and mobile layouts with chapter navigation, saved progress, character context, and accessible controls.",
+    ],
+    whyItMatters:
+      "The project treats reading support as temporary scaffolding: guidance is strongest at the beginning, then recedes as the reader develops confidence and begins making connections independently.",
+    sections: [
+      {
+        title: "Progressive Reading",
+        body:
+          "The first 20% uses interactive scenes and character dialogue. Guided reading then introduces annotated names, character context, and reflective questions. Later chapters become single-column, vertically scrolling pages with fewer interruptions, while translation and clue collection remain available.",
+      },
+      {
+        title: "Clue-Based Interaction",
+        body:
+          "Selected sentences can become collectible evidence. Readers place possible clues—including misleading ones—into a case bag and gradually light up a pre-structured case map as relationships become visible.",
+      },
+      {
+        title: "English-First Bilingual Design",
+        body:
+          "The interface is written in English, and each sentence initially shows only the original text. A Translate control reveals the corresponding Chinese sentence in place, keeping both languages close without forcing readers to scroll between separate versions.",
+      },
+      {
+        title: "Responsive Reading",
+        body:
+          "The same product adapts automatically across mobile and desktop. Character artwork stays inside the cinematic frame, guided pages preserve clear speaker identity, and later reading sections use a centred single column designed for vertical scrolling.",
+      },
+    ],
+  },
+  {
     id: "earth-is-not-humanitys-alone",
     title: "Earth Is Not Humanity’s Alone",
     displayTitle: "Earth Is Not Humanity’s Alone",

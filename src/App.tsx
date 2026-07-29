@@ -43,6 +43,7 @@ export default function App() {
             <Route path="/tangible" element={<Tangible />} />
             <Route path="/tangible/:projectId" element={<ProjectDetail />} />
             <Route path="/ongoing" element={<Ongoing />} />
+            <Route path="/ongoing/:projectId" element={<ProjectDetail />} />
             <Route path="/developer" element={<Navigate to="/ongoing" replace />} />
             <Route path="/rewind" element={<ProjectDetail projectIdOverride="rewind-past-self" />} />
             <Route path={TAROT_SITE_DEMO_PATH} element={null} />
