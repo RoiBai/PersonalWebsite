@@ -27,8 +27,7 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
     );
   }
 
-  const isIframeDemo =
-    project.id === "wall" || project.id === "space" || project.id === "idea-weaver";
+  const isIframeDemo = project.id === "wall" || project.id === "space";
   const isCompactVideo = project.id === "killing-brain";
   const shouldReverseGallery = project.id === "killing-brain";
   const parentRoute =

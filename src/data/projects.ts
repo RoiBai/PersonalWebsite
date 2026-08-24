@@ -320,16 +320,16 @@ export const projects: Project[] = [
     displayTitle: "Forest Trending",
     year: 2026,
     type: "game",
-    venue: "Agentland Game Jam · June 2026",
+    venue: "Agentland Fortnight Vol. 6 · AgentLand Lab · June 2026",
     role:
       "Creator — game design, interaction design, AI Agent system, visual design, and development",
     platform: "Web, AI Agents, PlayKit",
     status: "released",
-    statusLabel: "Excellence Award",
+    statusLabel: "Outstanding Project",
     shortDescription:
       "A pixel-art AI Agent public-opinion simulation where five daily stories are discussed, distorted, amplified, and clarified by a society of forest animals.",
     abstract:
-      "Forest Trending is a pixel-art AI Agent public-opinion simulation created for the Agentland Game Jam in June 2026, where it received an Excellence Award.\n\nEach morning, five stories arrive on the forest noticeboard. Players choose three animals for the daily duty team, then spend limited action points to amplify, cool down, fact-check, flag, protect, delay, or leave a story alone. Every intervention has trade-offs: verification may move slower than a rumor, while suppressing discussion can push speculation out of sight.\n\nThe goal is not to uncover one definitive truth. It is to care for a small society whose characters talk, misread, influence one another, and remember what happened—keeping fear from spreading too quickly without letting trust quietly disappear.",
+      "Forest Trending is a pixel-art AI Agent public-opinion simulation created during Agentland Fortnight Vol. 6, a game jam hosted by the Tsinghua University–affiliated AgentLand Lab, and selected as one of the event’s outstanding projects.\n\nEach morning, five stories arrive on the forest noticeboard. Players choose three animals for the daily duty team, then spend limited action points to amplify, cool down, fact-check, flag, protect, delay, or leave a story alone. Every intervention has trade-offs: verification may move slower than a rumor, while suppressing discussion can push speculation out of sight.\n\nThe goal is not to uncover one definitive truth. It is to care for a small society whose characters talk, misread, influence one another, and remember what happened—keeping fear from spreading too quickly without letting trust quietly disappear.",
     tags: [
       "AI Agents",
       "Social Simulation",
@@ -1065,91 +1065,6 @@ export const projects: Project[] = [
         src: "/images/tarot-site/tarot9-9.png",
         alt: "Tarot Reflection Website updated screenshot 9",
         caption: "Updated Tarot Reflection Website project image.",
-      },
-    ],
-  },
-  {
-    id: "idea-weaver",
-    title: "Idea Weaver",
-    displayTitle: "Idea Weaver",
-    year: 2026,
-    type: "art",
-    role: "Concept design, interaction design, prototype development",
-    platform: "React, Vite, TypeScript, mobile swipe interaction, localStorage",
-    shortDescription:
-      "A cross-disciplinary research ideation platform that turns vague interests into swipeable research seed cards and stronger topic directions.",
-    abstract:
-      "IdeaWeaver is a cross-disciplinary research ideation platform that helps users turn vague interests into researchable directions. Instead of starting from a blank prompt, users build a research profile and casually swipe through research seed cards on mobile. Each card presents a possible idea, key concepts, search phrases, and suggested methods. Liked ideas are saved into an Idea Studio, where users can review, connect, and merge them into stronger topic directions. The system focuses on keywords first, allowing users to explore ideas freely before moving into paper search or literature mapping.",
-    tags: [
-      "Creative Coding",
-      "Research Ideation",
-      "AI-assisted Reflection",
-      "Swipe Interaction",
-      "Idea Studio",
-      "Cross-disciplinary Research",
-      "React",
-    ],
-    links: [
-      { label: "GitHub", url: "https://github.com/RoiBai/IdeaWeaver" },
-      {
-        label: "Open interactive demo",
-        url: "/experiments/idea-weaver/index.html",
-      },
-    ],
-    image: "/images/idea-weaver-cover.png",
-    imageAlt: "Idea Weaver research seed card interface preview",
-    route: "/art/idea-weaver",
-    status: "prototype",
-    featured: true,
-    whatIDid: [
-      "Designed a mobile-first swipe interaction for exploring early-stage research seeds.",
-      "Built the Idea Studio flow where saved ideas can be reviewed, connected, and merged.",
-      "Framed the system around keywords and research directions before formal literature mapping.",
-    ],
-    whyItMatters:
-      "Idea Weaver explores how swipe-based interaction and AI-assisted reflection can support early-stage research ideation across different disciplines, not only HCI or design.",
-    sections: [
-      {
-        title: "Interaction Concept",
-        body:
-          "Instead of asking users to begin with a polished research prompt, Idea Weaver lets them create a lightweight research profile and browse seed cards through casual swiping. The interaction lowers the pressure of ideation and makes topic discovery feel exploratory.",
-      },
-      {
-        title: "Idea Studio",
-        body:
-          "Liked cards are saved into an Idea Studio where users can review, connect, and merge them. This turns scattered interests into stronger topic directions without forcing users into a linear paper-search workflow too early.",
-      },
-      {
-        title: "Keyword-first Exploration",
-        body:
-          "The system emphasizes key concepts, search phrases, and suggested methods before full literature mapping, helping users move from vague curiosity toward researchable paths.",
-      },
-    ],
-    gallery: [
-      {
-        src: "/images/idea-weaver/idea1.png",
-        alt: "Idea Weaver cover screen and research seed card preview",
-        caption: "Mobile-first research seed exploration preview.",
-      },
-      {
-        src: "/images/idea-weaver/idea2.png",
-        alt: "Idea Weaver research profile or card interaction screenshot",
-        caption: "Research profile and early ideation flow.",
-      },
-      {
-        src: "/images/idea-weaver/idea3.png",
-        alt: "Idea Weaver Idea Studio screenshot",
-        caption: "Idea Studio for reviewing, connecting, and merging liked directions.",
-      },
-      {
-        src: "/images/idea-weaver/idea4.png",
-        alt: "Idea Weaver keyword and search phrase interface",
-        caption: "Keyword-first support before moving into paper search.",
-      },
-      {
-        src: "/images/idea-weaver/idea5.png",
-        alt: "Idea Weaver topic direction or literature grounding screenshot",
-        caption: "Topic direction support for cross-disciplinary exploration.",
       },
     ],
   },

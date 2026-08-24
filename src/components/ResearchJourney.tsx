@@ -124,16 +124,6 @@ const JOURNEY: JourneyEntry[] = [
       "I kept meeting people who turned to mysticism with everyday problems. Often they were not really asking for a prediction; they needed a structure for hearing their own thoughts. I designed tarot as a symbolic illusion—a gentle mirror that helps people reframe a question and face it themselves.",
   },
   {
-    projectId: "idea-weaver",
-    date: "2026.05",
-    order: 202605.2,
-    kind: "spark",
-    thread: "life",
-    source: "A lived moment",
-    reflection:
-      "After being stuck in the painful blank space of “I have no idea,” I watched a friend use Tinder and wondered whether research ideation could feel just as casual. Idea Weaver replaces the empty prompt with seeds to swipe, save, connect, and grow into a research direction.",
-  },
-  {
     projectId: "monster-between-us",
     date: "2026.05",
     order: 202605.3,

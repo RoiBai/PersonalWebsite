@@ -3,8 +3,6 @@ const items = [
   "blue leaves",
   "Vision Pro dog friend",
   "camera stickers",
-  "research seed cards",
-  "idea studio",
   "tarot reflection",
   "ambulance ramping",
   "acrylic brain",
