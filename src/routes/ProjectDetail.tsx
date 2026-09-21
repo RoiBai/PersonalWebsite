@@ -30,6 +30,7 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
   const isIframeDemo = project.id === "wall" || project.id === "space";
   const isCompactVideo = project.id === "killing-brain";
   const shouldReverseGallery = project.id === "killing-brain";
+  const showContributions = project.whatIDid?.length !== 0;
   const parentRoute =
     project.type === "research"
       ? "/research"
@@ -144,7 +145,7 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
       ) : null}
 
       <section className="section">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr]">
+        <div className={showContributions ? "grid gap-10 lg:grid-cols-[1fr_0.8fr]" : "max-w-4xl"}>
           <div>
             <h2 className="text-3xl font-semibold text-ink">Overview</h2>
             <div className="mt-4 space-y-4 text-lg leading-8 text-graphite">
@@ -153,17 +154,19 @@ export default function ProjectDetail({ projectIdOverride }: ProjectDetailProps)
               ))}
             </div>
           </div>
-          <div className="rounded-lg border border-ink/10 bg-white/55 p-6">
-            <h2 className="text-2xl font-semibold text-ink">What I did</h2>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-graphite">
-              {(project.whatIDid ?? [
-                "Contributed to concept framing, interaction design, implementation, and project communication.",
-                "Shaped the project into a clear portfolio story with context, links, and visual placeholders ready for final media.",
-              ]).map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
+          {showContributions ? (
+            <div className="rounded-lg border border-ink/10 bg-white/55 p-6">
+              <h2 className="text-2xl font-semibold text-ink">What I did</h2>
+              <ul className="mt-4 space-y-3 text-sm leading-6 text-graphite">
+                {(project.whatIDid ?? [
+                  "Contributed to concept framing, interaction design, implementation, and project communication.",
+                  "Shaped the project into a clear portfolio story with context, links, and visual placeholders ready for final media.",
+                ]).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
       </section>
 

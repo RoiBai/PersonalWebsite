@@ -12,6 +12,7 @@ import Plog from "./routes/Plog";
 import ProjectDetail from "./routes/ProjectDetail";
 import Research from "./routes/Research";
 import ScrollProgress from "./components/ScrollProgress";
+import ScrollToTop from "./components/ScrollToTop";
 import Tangible from "./routes/Tangible";
 
 const TAROT_SITE_DEMO_PATH = "/art/tarot-site/demo";
@@ -33,6 +34,7 @@ export default function App() {
           exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
           transition={{ duration: 0.2 }}
         >
+          <ScrollToTop />
           <Routes location={location}>
             <Route path="/" element={<Home />} />
             <Route path="/research" element={<Research />} />
